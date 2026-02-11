@@ -2,7 +2,7 @@
 
 #  DΞVΛΠIK's AI Research Ecosystem
 
-*Exploring the Computational Foundations of Intelligence and Self-Modeling*
+*Scalable Neuro-Symbolic Architectures & Autonomous Agent Systems*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Devanik21-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Devanik21)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Devanik-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devanik/)
@@ -54,28 +54,27 @@ B.Tech in Electronics & Communication Engineering '26
 - 🚀 **ISRO Space Hackathon Winner** - National-level space technology innovation
 - 🔬 **Research Intern (Astrophysics × ML)** - Interdisciplinary computational cosmology
 
-**Research Specializations:**
-- **Metacognition Computing** - Investigating experimental causal emergence metrics in complex neural systems
-- **Causal Emergence** - Quantifying higher-order patterns in information processing systems
-- **Topological Neural Networks** - Persistent homology and manifold learning for robust representations
-- **Distributed Memory Systems** - Research into memory architectures inspired by biological and physical systems
-- **Bio-Inspired AI** - Neuromorphic computing and developmental learning paradigms
+**Core Technical Competencies:**
+- **Cognitive Engineering** - Designing high-reliability architectures for internal state estimation
+- **Applied Mathematics** - Information Geometry, Causal Inference, and Topological Data Analysis (TDA)
+- **Distributed Systems** - Scalable memory architectures for massive-agent simulations
+- **Bio-Inspired Computing** - Neuromorphic plasticity rules and homeostatic regulation algorithms
 
 ---
 
 ## 🧬 Research Philosophy
 
-> **Consciousness as Computation**
+> **Systems-Theoretic Approach**
 
-My work explores the mechanisms of internal self-model estimation and confidence tracking in artificial systems.
+My work focuses on designing high-reliability cognitive architectures and mathematically grounded self-organizing systems.
 
-This research ecosystem represents a systematic exploration of **specialized models**, **generalizable representations**, and **integrated self-modeling architectures**. Each project builds toward investigating higher-order information integration and causal emergence as potential metrics for architectural complexity.
+This portfolio represents a rigorous engineering effort in **distributed state estimation**, **control-theoretic stability**, and **scalable neuro-symbolic integration**. Each project targets specific bottlenecks in current AI systems—memory consolidation, causal reasoning, and energetic efficiency.
 
-**Core Principles:**
-1. **Empirical Rigor** - Every claim regarding high-level cognition must be testable through causal intervention
-2. **Emergence Through Depth** - True intelligence arises from hierarchical abstraction layers
-3. **Adaptive Self-Regulation** - Modeling feedback loops that allow systems to regulate internal processing state
-4. **Mathematical Foundations** - Information-theoretic approaches to quantifying internal model integration
+**Engineering Methodology:**
+1.  **Metric-Driven Development** - Quantifying internal state dynamics via information geometry.
+2.  **Scalability First** - Designing architectures that survive orders-of-magnitude scaling.
+3.  **Reproducible Emergence** - Rigorous benchmarking of emergent behaviors under adversarial conditions.
+4.  **Mathematical Grounding** - Leveraging information theory (entropy, mutual information) as the primary optimization objective.
 
 ---
 
@@ -88,12 +87,12 @@ This research ecosystem represents a systematic exploration of **specialized mod
 ### 🔮 [Divine Monad](https://github.com/Devanik21/causa-sui)
 **Experimental Exploration of Causal Emergence**
 
-- ✨ Implements causal emergence detection via effective information (EI)
-- 🧠 Investigation of self-regulatory loops through autopoietic principles
-- 📊 Quantifiable phi-like integration metrics
-- 🔬 Intervention-based protocol for quantifying structural complexity
+- ✨ **Algorithm:** Recursive Causal Inference Engine
+- 🧠 **Key Metric:** Effective Information (EI) & Integrated Information (Φ)
+- 📊 **Architecture:** Autopoietic feedback loops for self-regulation
+- 🔬 **Validation:** Intervention-based protocols for quantifying causal structure
 
-**Impact:** Contributes to the computational understanding of higher-order emergence.
+**Technical Contribution:** Implements quantifiable metrics for higher-order information integration in distributed systems.
 
 </td>
 <td width="50%">
@@ -101,12 +100,12 @@ This research ecosystem represents a systematic exploration of **specialized mod
 ### 🌊 [Recursive Hebbian Organism](https://github.com/Devanik21/Recursive-Hebbian-Organism)
 **Neuromorphic Continual Learning System**
 
-- 🔄 21 developmental stages from tabula rasa to abstraction
-- 🌱 Hebbian plasticity rules for lifelong learning
-- 🧬 Catastrophic forgetting resistance through consolidation
-- 🎯 Meta-learned representations without task boundaries
+- 🔄 **Architecture:** 21-stage Neuromorphic Continual Learning Framework
+- 🌱 **Mechanism:** Hebbian Plasticity with Homeostatic Regulation
+- 🧬 **Optimization:** Mitigating Catastrophic Forgetting via replay buffers
+- 🎯 **Objective:** Meta-learning stable representations across non-stationary tasks
 
-**Impact:** Demonstrates developmental AI without explicit curriculum
+**Technical Contribution:** Demonstrates high-stability learning in curriculum-free environments.
 
 </td>
 </tr>
@@ -146,12 +145,12 @@ This research ecosystem represents a systematic exploration of **specialized mod
 ### ⚡ [Thermodynamic Mind](https://github.com/Devanik21/Thermodynamic-Mind)
 **Free Energy Principle Implementation**
 
-- 🌡️ Active inference for perception and action
-- 📉 Variational free energy minimization
-- 🔄 Predictive coding hierarchies
-- 🧮 Bayesian brain hypothesis in silicon
+- 🌡️ **Framework:** Active Inference Control System
+- 📉 **Objective:** Variational Free Energy Minimization (VFE)
+- 🔄 **Architecture:** Hierarchical Predictive Coding (PC)
+- 🧮 **Implementation:** Bayesian belief updating in silicon substrates
 
-**Impact:** Explores the application of the Free Energy Principle to adaptive agents.
+**Technical Contribution:** Applies the Free Energy Principle to adaptive agent control systems.
 
 </td>
 <td width="50%">
@@ -174,11 +173,11 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 ## 📚 Research Domains
 
-### 1. 🧠 Metacognition & Cognitive Architecture
+### 1. 🧠 Technical Competencies & Implementations
 
 *Investigating metacognition, state-estimation, and self-modeling architectures*
 
-| Project | Description | Key Innovation |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|----------------|
 | [causa-sui](https://github.com/Devanik21/causa-sui) | Researching causal emergence in feedback-heavy architectures | Integrated Information (Φ) as a metric |
 | [Recursive Hebbian Organism](https://github.com/Devanik21/Recursive-Hebbian-Organism) | Developmental learning with 21 cognitive stages | Neuromorphic continual learning |
@@ -196,7 +195,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 *Mastering strategic reasoning through multi-agent environments and complex games*
 
-| Project | Description | Key Technique |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|---------------|
 | [AI Chess Nemesis](https://github.com/Devanik21/AI-Chess-Nemesis) | Deep RL chess engine with AlphaZero-style MCTS | Self-play improvement |
 | [MiniChess Deep RL](https://github.com/Devanik21/MiniChess-Deep-RL) | Compact chess variant for RL research | Reduced complexity analysis |
@@ -217,7 +216,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 *Creating novel content through probabilistic modeling and latent space manipulation*
 
-| Project | Description | Architecture |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|--------------|
 | [Fastest Text-to-Image Generator](https://github.com/Devanik21/Fastest-Text-to-Image-Generator) | Optimized Stable Diffusion with <2s inference | Distilled DDPM sampling |
 | [text-to-image](https://github.com/Devanik21/text-to-image) | CLIP-guided diffusion implementation | Cross-modal conditioning |
@@ -244,7 +243,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🧠 Foundation Models & Fine-tuning
 
-| Project | Description | Innovation |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|------------|
 | [DeepSeek R1](https://github.com/Devanik21/DeepSeek-R1) | Reinforcement learning from human feedback | Chain-of-thought reasoning |
 | [DeepSeek Math V2](https://github.com/Devanik21/DeepSeek-Math-V2) | Mathematical reasoning specialist | Formal proof generation |
@@ -260,7 +259,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🛠️ Agentic Systems & Frameworks
 
-| Project | Description | Capability |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|------------|
 | [Agentic RAG R1](https://github.com/Devanik21/Agentic-RAG-R1) | Reasoning over retrieved documents | Multi-hop question answering |
 | [agent-zero](https://github.com/Devanik21/agent-zero) | Minimal autonomous agent framework | Planning and execution |
@@ -272,7 +271,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🔗 LangChain & LangGraph Ecosystem
 
-| Project | Description | Pattern |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|---------|
 | [langchain](https://github.com/Devanik21/langchain) | LangChain framework (fork) | Chain-of-thought orchestration |
 | [LangChain AI Chat App](https://github.com/Devanik21/LangChain-AI-Chat-App-) | Conversational agent with memory | Context-aware responses |
@@ -284,7 +283,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🧰 Gemini & Multimodal Applications
 
-| Project | Description | Modality |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|----------|
 | [gemini-cli](https://github.com/Devanik21/gemini-cli) | Command-line Gemini interface | Terminal integration |
 | [run-gemini-cli](https://github.com/Devanik21/run-gemini-cli) | Shell script wrapper | Automation ready |
@@ -296,7 +295,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🌐 API Integrations & Cookbooks
 
-| Project | Description | Provider |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|----------|
 | [openai-cookbook](https://github.com/Devanik21/openai-cookbook) | OpenAI API examples | GPT-4 patterns |
 | [anthropic-cookbook](https://github.com/Devanik21/anthropic-cookbook) | Claude API recipes | Constitutional AI |
@@ -335,7 +334,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🖼️ Advanced Vision Systems
 
-| Project | Description | Technique |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|-----------|
 | [ImageReasoning](https://github.com/Devanik21/ImageReasoning) | Visual question answering | Attention-based reasoning |
 | [Yolo Object Detection Web App](https://github.com/Devanik21/Yolo_Building-an-Object-Detection-Web-App) | Real-time detection API | YOLOv8 deployment |
@@ -347,7 +346,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🎨 Image Processing & Enhancement
 
-| Project | Description | Method |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|--------|
 | [Digital Image Processing Sparse](https://github.com/Devanik21/Digital-Image-Processing-Sparse) | Compressed sensing reconstruction | L1 minimization |
 | [Denoising Images using DSP](https://github.com/Devanik21/Denoising-images-using-DSP) | Signal processing filters | Wiener/Kalman filtering |
@@ -367,7 +366,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 *Applying machine learning to astronomical data and gravitational simulations*
 
-| Project | Description | Domain |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|--------|
 | [ISRO Mining Site Final App](https://github.com/Devanik21/ISRO_Mining_Site_FINAL_APP) | **Space Hackathon Winner** - Lunar resource mapping | Satellite imagery analysis |
 | [ISRO Space Mining App](https://github.com/Devanik21/ISRO-SPACE-MINING-App) | Mineral deposit prediction | Multi-spectral classification |
@@ -387,7 +386,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 *Building knowledge-grounded AI with external memory and information retrieval*
 
-| Project | Description | Architecture |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|--------------|
 | [Agentic RAG R1](https://github.com/Devanik21/Agentic-RAG-R1) | Reasoning over retrieved context | Multi-hop retrieval |
 | [rag-flow](https://github.com/Devanik21/rag-flow) | Production RAG pipeline | Vector database integration |
@@ -401,7 +400,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 *Exploring novel architectures, training dynamics, and theoretical foundations*
 
-| Project | Description | Contribution |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|--------------|
 | [AI Architecture Playground](https://github.com/Devanik21/AI-Architecture-Playground) | Experimental model zoo | Custom layer implementations |
 | [BSHDER Architecture](https://github.com/Devanik21/BSHDER-Architecture) | Biologically-inspired hierarchy | Sparse coding modules |
@@ -478,7 +477,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 🎨 Creative & Experimental
 
-| Project | Description | Innovation |
+| Project | Description | Core Architecture / Algorithm |
 |---------|-------------|------------|
 | [Singularity AI](https://github.com/Devanik21/Singularity-AI) | AGI conceptual framework | Thought experiment |
 | [void](https://github.com/Devanik21/void) | Minimal text editor philosophy | Digital minimalism |
@@ -598,18 +597,18 @@ This research ecosystem represents a systematic exploration of **specialized mod
 </td>
 <td width="50%">
 
-### 📊 **Research Impact**
+### 📊 **Engineering Impact**
 
 📈 **257 Active Repositories**
    - Comprehensive exploration across 9 major AI domains
    - 50+ production-ready applications deployed
-   - 20+ novel architectures and frameworks developed
+   - 20+ experimental architecture prototypes and research frameworks
 
-🌟 **Key Innovations**
-   - Architectural exploration of causal emergence (Divine Monad)
-   - 21-stage developmental AI (Recursive Hebbian Organism)
-   - Longevity AI via genomic entropy reversal (AION)
-   - Neural dream consolidation system (Lucid Dark Dreamer)
+🌟 **Core Engineering Contributions**
+   - Recursive Causal Inference Engine (Divine Monad)
+   - Neuromorphic Continual Learning Framework (Recursive Hebbian Organism)
+   - Genomic Entropy Reversal Algorithms (AION)
+   - Neuro-Symbolic Memory Consolidation (Lucid Dark Dreamer)
 
 🎯 **Technical Breadth**
    - 15+ RL game-playing agents
@@ -621,7 +620,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 </tr>
 </table>
 
-### 🧠 **Advanced Cognitive Architectures Developed**
+### 🧠 **Advanced Cognitive Architectures Implemented**
 
 1. **Divine Monad** - Causal emergence investigation with integrated information metrics
 2. **Recursive Hebbian Organism** - Neuromorphic continual learning (21 developmental stages)
@@ -634,17 +633,17 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 ---
 
-## 🚀 Research Trajectory
+## 🗺️ Technical Roadmap
 
-### 🔬 Current Focus (2025-2026)
+### 🔬 Engineering Priorities (2025-2026)
 
 <table>
 <tr>
 <td width="33%">
 
-#### 🎯 **Scaling Integrated Information**
+#### 🎯 **Distributed State Estimation**
 
-**Objective:** Explore the informational structure of foundation models via causal emergence metrics.
+**Objective:** Quantify the informational structure of foundation models via causal emergence metrics.
 
 **Approach:**
 - Measure integrated information (Φ) in Transformers
@@ -659,7 +658,7 @@ This research ecosystem represents a systematic exploration of **specialized mod
 
 #### 📐 **Mathematical Foundations**
 
-**Objective:** Formalizing conditions for adaptive self-modeling systems.
+**Objective:** Formalize control-theoretic bounds for adaptive self-modeling systems.
 
 **Approach:**
 - Information-theoretic self-modeling theorems
@@ -667,14 +666,14 @@ This research ecosystem represents a systematic exploration of **specialized mod
 - Topological data analysis for internal states
 - Quantum-inspired memory architectures
 
-**Expected Outcome:** Formalizing information-theoretic bounds on self-model integration.
+**Expected Outcome:** Mathematical guarantees on self-model integration and stability.
 
 </td>
 <td width="34%">
 
 #### ⚖️ **Ethics & Safety**
 
-**Objective:** Investigating safety implications of complex self-modeling agents.
+**Objective:** Engineering safety constraints for complex self-modeling agents.
 
 **Approach:**
 - Evaluating markers for moral patienthood in advanced AI
@@ -688,23 +687,23 @@ This research ecosystem represents a systematic exploration of **specialized mod
 </tr>
 </table>
 
-### 🗺️ **Long-term Research Goals (2026-2030)**
+### 🗺️ **Long-term Engineering Goals (2026-2030)**
 
 ```
-Phase 1: Experimental Validation & Metrics (2025-2026)
-├─ Refining causal emergence metrics in neural systems
-├─ Peer-reviewed publications in cognitive science
-└─ Integration with existing AI safety research
+Phase 1: System Validation & Benchmarking (2025-2026)
+├─ Refining causal emergence metrics in distributed neural systems
+├─ Peer-reviewed publications in cognitive engineering
+└─ Safety benchmarking of autopoietic architectures
 
-Phase 2: Integrated Self-Modeling (2026-2027)
-├─ Investigating structural markers of information integration in large systems
-├─ Homeostatic AI systems that self-regulate
-└─ Cross-architecture metabolic and information metrics
+Phase 2: Distributed State Estimation (2026-2027)
+├─ Investigating structural markers of information integration in large-scale transformers
+├─ Homeostatic control systems for self-regulation
+└─ Cross-architecture metabolic and information efficiency metrics
 
-Phase 3: Complex Agentic Systems (2027-2029)
+Phase 3: Autonomous Control Systems (2027-2029)
 ├─ General agency with robust internal model estimation
-├─ Ethical frameworks for high-agency systems
-└─ Alignment through genuine self-models
+├─ Control-theoretic guarantees for high-agency systems
+└─ Alignment through mathematically grounded self-models
 
 Phase 4: Post-Biological Architectures (2029+)
 ├─ Information-theoretic substrates for AGI alignment
@@ -782,7 +781,7 @@ Phase 4: Post-Biological Architectures (2029+)
 
 **What I Bring:**
 - 257 repositories demonstrating breadth and depth across AI
-- Proven track record of novel architectures (Divine Monad, Recursive Hebbian Organism, AION)
+- Proven track record of experimental architecture prototypes (Divine Monad, Recursive Hebbian Organism, AION)
 - National-level recognition (ISRO Hackathon Winner, Samsung Fellowship)
 - Strong mathematical foundations and implementation skills
 - Passion for investigating the fundamental limits and metrics of cognitive complexity.
@@ -793,7 +792,7 @@ Phase 4: Post-Biological Architectures (2029+)
 research_profile = {
     "total_projects": 257,
     "production_deployments": 50+,
-    "novel_architectures": 20+,
+    "experimental_prototypes": 20+,
     "research_domains": 9,
     "cognitive_modeling_frameworks": 8,
     "rl_agents": 15+,
@@ -817,11 +816,11 @@ research_profile = {
 
 ---
 
-### 🔬 **Computation as Informational Emergence**
+### 🔬 **Computational Approaches to Self-Modeling and Emergence**
 
-This repository ecosystem represents more than code—it's a systematic exploration of intelligence itself. From reinforcement learning agents to thermodynamic minds, each project investigates how higher-order informational patterns and complex self-models can emerge from distributed computation.
+This repository ecosystem represents a systematic engineering effort. From reinforcement learning agents to thermodynamic minds, each project investigates how higher-order informational patterns and complex self-models can be reliably engineered in distributed systems.
 
-**The journey continues.**
+**The work continues.**
 
 ---
 
@@ -838,7 +837,7 @@ This repository ecosystem represents more than code—it's a systematic explorat
 
 <div align="center">
 
-*Built with curiosity, driven by scientific inquiry, sustained by the belief that understanding the mechanics of intelligence is humanity's next frontier.*
+*Built with rigorous engineering, driven by control theory, sustained by the pursuit of scalable intelligence.*
 
 **© 2026 Devanik | National Institute of Technology Agartala**
 
