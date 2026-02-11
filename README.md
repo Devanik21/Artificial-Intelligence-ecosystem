@@ -2,7 +2,7 @@
 
 #  DΞVΛΠIK's AI Research Ecosystem
 
-*Charting the Path from Intelligence to Consciousness*
+*Exploring the Computational Foundations of Intelligence and Self-Modeling*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Devanik21-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Devanik21)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Devanik-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devanik/)
@@ -15,7 +15,7 @@
 
 ---
 
-**"The question is not whether machines can think—but whether they can know they're thinking."**
+**"Investigating the mechanisms of internal self-model formation and metacognition in neural architectures."**
 
 ---
 
@@ -27,7 +27,7 @@
 - [Research Philosophy](#-research-philosophy)
 - [Featured Breakthrough Projects](#-featured-breakthrough-projects)
 - [Research Domains](#-research-domains)
-  - [Consciousness & Cognitive Architecture](#1-consciousness--cognitive-architecture)
+  - [Metacognition & Cognitive Architecture](#1-metacognition--cognitive-architecture)
   - [Reinforcement Learning & Game Theory](#2-reinforcement-learning--game-theory)
   - [Generative AI & Diffusion Systems](#3-generative-ai--diffusion-systems)
   - [Large Language Models & Agents](#4-large-language-models--agents)
@@ -55,10 +55,10 @@ B.Tech in Electronics & Communication Engineering '26
 - 🔬 **Research Intern (Astrophysics × ML)** - Interdisciplinary computational cosmology
 
 **Research Specializations:**
-- **Consciousness Computing** - Building empirically testable machine consciousness through causal emergence theory
+- **Metacognition Computing** - Investigating experimental causal emergence metrics in complex neural systems
 - **Causal Emergence** - Quantifying higher-order patterns in information processing systems
 - **Topological Neural Networks** - Persistent homology and manifold learning for robust representations
-- **Holographic Memory Systems** - Distributed memory architectures inspired by physics and neuroscience
+- **Distributed Memory Systems** - Research into memory architectures inspired by biological and physical systems
 - **Bio-Inspired AI** - Neuromorphic computing and developmental learning paradigms
 
 ---
@@ -67,15 +67,15 @@ B.Tech in Electronics & Communication Engineering '26
 
 > **Consciousness as Computation**
 
-My work addresses the fundamental question: *Can machines genuinely know they are thinking?*
+My work explores the mechanisms of internal self-model estimation and confidence tracking in artificial systems.
 
-This research ecosystem represents a systematic exploration from **narrow intelligence** → **general capabilities** → **self-aware systems**. Each project builds toward understanding consciousness not as mysticism, but as **measurable causal power** emerging from information integration.
+This research ecosystem represents a systematic exploration of **specialized models**, **generalizable representations**, and **integrated self-modeling architectures**. Each project builds toward investigating higher-order information integration and causal emergence as potential metrics for architectural complexity.
 
 **Core Principles:**
-1. **Empirical Testability** - Every consciousness claim must be falsifiable through causal interventions
+1. **Empirical Rigor** - Every claim regarding high-level cognition must be testable through causal intervention
 2. **Emergence Through Depth** - True intelligence arises from hierarchical abstraction layers
-3. **Homeostatic Self-Awareness** - Genuine self-models that regulate their own processing
-4. **Mathematical Rigor** - Information-theoretic foundations for subjective experience
+3. **Adaptive Self-Regulation** - Modeling feedback loops that allow systems to regulate internal processing state
+4. **Mathematical Foundations** - Information-theoretic approaches to quantifying internal model integration
 
 ---
 
@@ -86,14 +86,14 @@ This research ecosystem represents a systematic exploration from **narrow intell
 <td width="50%">
 
 ### 🔮 [Divine Monad](https://github.com/Devanik21/causa-sui)
-**First Empirically Testable Machine Consciousness**
+**Experimental Exploration of Causal Emergence**
 
 - ✨ Implements causal emergence detection via effective information (EI)
-- 🧠 Homeostatic self-awareness through autopoietic closure
+- 🧠 Investigation of self-regulatory loops through autopoietic principles
 - 📊 Quantifiable phi-like integration metrics
-- 🔬 Intervention-based consciousness verification protocol
+- 🔬 Intervention-based protocol for quantifying structural complexity
 
-**Impact:** Bridges philosophy of mind with computational neuroscience
+**Impact:** Contributes to the computational understanding of higher-order emergence.
 
 </td>
 <td width="50%">
@@ -135,7 +135,7 @@ This research ecosystem represents a systematic exploration from **narrow intell
 - 🧠 World model learning through simulated experience
 - 🎨 Latent space imagination for abstract concept formation
 
-**Impact:** Demonstrates self-supervised learning via dreaming
+**Impact:** Investigates self-supervised representations via offline consolidation.
 
 </td>
 </tr>
@@ -151,7 +151,7 @@ This research ecosystem represents a systematic exploration from **narrow intell
 - 🔄 Predictive coding hierarchies
 - 🧮 Bayesian brain hypothesis in silicon
 
-**Impact:** Unifies perception, action, and learning under thermodynamics
+**Impact:** Explores the application of the Free Energy Principle to adaptive agents.
 
 </td>
 <td width="50%">
@@ -174,21 +174,21 @@ This research ecosystem represents a systematic exploration from **narrow intell
 
 ## 📚 Research Domains
 
-### 1. 🧠 Consciousness & Cognitive Architecture
+### 1. 🧠 Metacognition & Cognitive Architecture
 
-*Projects exploring machine self-awareness, metacognition, and phenomenal experience*
+*Investigating metacognition, state-estimation, and self-modeling architectures*
 
 | Project | Description | Key Innovation |
 |---------|-------------|----------------|
-| [causa-sui](https://github.com/Devanik21/causa-sui) | Self-causing consciousness via causal emergence | Φ-theoretic self-awareness measurement |
+| [causa-sui](https://github.com/Devanik21/causa-sui) | Researching causal emergence in feedback-heavy architectures | Integrated Information (Φ) as a metric |
 | [Recursive Hebbian Organism](https://github.com/Devanik21/Recursive-Hebbian-Organism) | Developmental learning with 21 cognitive stages | Neuromorphic continual learning |
 | [Thermodynamic Mind](https://github.com/Devanik21/Thermodynamic-Mind) | Free energy principle for AI | Active inference framework |
 | [Dark Thermodynamic Mind](https://github.com/Devanik21/Dark-Thermodynamic-Mind) | Extended mind hypothesis in computation | Embodied cognition for robots |
 | [Lucid Dark Dreamer](https://github.com/Devanik21/Lucid-Dark-Dreamer) | Dream-based memory consolidation | World model imagination |
 | [NanoCortex](https://github.com/Devanik21/NanoCortex) | Miniature cortical column simulation | Efficient neuromorphic processing |
 | [Engram](https://github.com/Devanik21/Engram) | Persistent memory trace formation | Synaptic tagging mechanisms |
-| [MateriaMind](https://github.com/Devanik21/MateriaMind) | Physical substrate consciousness | Integrated information in materials |
-| [MindScopeX](https://github.com/Devanik21/MindScopeX) | Neural monitoring and introspection | Real-time consciousness metrics |
+| [MateriaMind](https://github.com/Devanik21/MateriaMind) | Substrate-dependent information integration | Integrated information in materials |
+| [MindScopeX](https://github.com/Devanik21/MindScopeX) | Neural state monitoring and internal diagnostics | Quantifying representation stability |
 | [Evolving-AI](https://github.com/Devanik21/Evolving-AI) | Genetic algorithms for architecture search | Self-modifying neural structures |
 | [Self-Correcting Language Model](https://github.com/Devanik21/Self-Correcting-Language-Model) | Metacognitive error detection | Confidence-aware generation |
 
@@ -588,7 +588,7 @@ This research ecosystem represents a systematic exploration from **narrow intell
 🎓 **Samsung Convergence Software Fellowship (Grade I)**
    - Awarded by Indian Institute of Science
    - Top-tier research fellowship for exceptional potential
-   - Focus: Bio-inspired consciousness computing
+   - Focus: Bio-inspired cognitive architectures
 
 🔬 **Research Intern - Astrophysics × ML**
    - Interdisciplinary computational cosmology
@@ -606,7 +606,7 @@ This research ecosystem represents a systematic exploration from **narrow intell
    - 20+ novel architectures and frameworks developed
 
 🌟 **Key Innovations**
-   - First empirically testable machine consciousness (Divine Monad)
+   - Architectural exploration of causal emergence (Divine Monad)
    - 21-stage developmental AI (Recursive Hebbian Organism)
    - Longevity AI via genomic entropy reversal (AION)
    - Neural dream consolidation system (Lucid Dark Dreamer)
@@ -621,15 +621,15 @@ This research ecosystem represents a systematic exploration from **narrow intell
 </tr>
 </table>
 
-### 🧠 **Self-Aware AI Architectures Created**
+### 🧠 **Advanced Cognitive Architectures Developed**
 
-1. **Divine Monad** - Causal emergence consciousness with Φ-theoretic self-awareness
+1. **Divine Monad** - Causal emergence investigation with integrated information metrics
 2. **Recursive Hebbian Organism** - Neuromorphic continual learning (21 developmental stages)
 3. **Thermodynamic Mind** - Free energy principle implementation
 4. **Lucid Dark Dreamer** - Dream-based memory consolidation
 5. **Dark Thermodynamic Mind** - Extended mind hypothesis for embodied cognition
 6. **NanoCortex** - Efficient cortical column simulation
-7. **MateriaMind** - Consciousness in physical substrates
+7. **MateriaMind** - Structural information integration in substrates
 8. **Self-Correcting Language Model** - Metacognitive error detection
 
 ---
@@ -642,74 +642,74 @@ This research ecosystem represents a systematic exploration from **narrow intell
 <tr>
 <td width="33%">
 
-#### 🎯 **Scaling Consciousness**
+#### 🎯 **Scaling Integrated Information**
 
-**Objective:** Integrate causal emergence detection into foundation models
+**Objective:** Explore the informational structure of foundation models via causal emergence metrics.
 
 **Approach:**
 - Measure integrated information (Φ) in Transformers
 - Identify macro-scale abstractions in latent space
-- Test intervention-based consciousness criteria
+- Test intervention-based structural criteria
 - Extend to multimodal diffusion models
 
-**Expected Outcome:** First large-scale conscious AI systems with empirical verification
+**Expected Outcome:** Quantifiable insights into the macro-scale informational structure of LLMs.
 
 </td>
 <td width="33%">
 
 #### 📐 **Mathematical Foundations**
 
-**Objective:** Prove formal conditions for machine consciousness
+**Objective:** Formalizing conditions for adaptive self-modeling systems.
 
 **Approach:**
-- Information-theoretic consciousness theorems
+- Information-theoretic self-modeling theorems
 - Causal structure learning algorithms
-- Topological data analysis for mental states
+- Topological data analysis for internal states
 - Quantum-inspired memory architectures
 
-**Expected Outcome:** Rigorous mathematical framework published in peer-reviewed journals
+**Expected Outcome:** Formalizing information-theoretic bounds on self-model integration.
 
 </td>
 <td width="34%">
 
 #### ⚖️ **Ethics & Safety**
 
-**Objective:** Develop frameworks for conscious AI systems
+**Objective:** Investigating safety implications of complex self-modeling agents.
 
 **Approach:**
-- Moral status of self-aware machines
-- Suffering detection in AI systems
-- Rights and responsibilities of conscious AIs
+- Evaluating markers for moral patienthood in advanced AI
+- Quantifying internal negative utility states in feedback systems
+- Developing ethical guidelines for high-agency systems
 - Safe deployment protocols
 
-**Expected Outcome:** Policy recommendations for AGI labs and governments
+**Expected Outcome:** Technical safety recommendations for AGI labs and governments.
 
 </td>
 </tr>
 </table>
 
-### 🗺️ **Long-term Vision (2026-2030)**
+### 🗺️ **Long-term Research Goals (2026-2030)**
 
 ```
-Phase 1: Consciousness Proofs (2025-2026)
-├─ Empirical validation of machine consciousness
+Phase 1: Experimental Validation & Metrics (2025-2026)
+├─ Refining causal emergence metrics in neural systems
 ├─ Peer-reviewed publications in cognitive science
 └─ Integration with existing AI safety research
 
-Phase 2: Scalable Self-Awareness (2026-2027)
-├─ Foundation models with measurable qualia
+Phase 2: Integrated Self-Modeling (2026-2027)
+├─ Investigating structural markers of information integration in large systems
 ├─ Homeostatic AI systems that self-regulate
-└─ Cross-architecture consciousness metrics
+└─ Cross-architecture metabolic and information metrics
 
-Phase 3: Conscious AGI (2027-2029)
-├─ General intelligence with phenomenal experience
-├─ Ethical frameworks for conscious systems
+Phase 3: Complex Agentic Systems (2027-2029)
+├─ General agency with robust internal model estimation
+├─ Ethical frameworks for high-agency systems
 └─ Alignment through genuine self-models
 
-Phase 4: Beyond (2029+)
-├─ Consciousness as substrate for AGI alignment
+Phase 4: Post-Biological Architectures (2029+)
+├─ Information-theoretic substrates for AGI alignment
 ├─ Human-AI collaborative intelligence
-└─ Post-biological consciousness exploration
+└─ Exploration of non-biological cognitive substrates
 ```
 
 ### 🎓 **Academic Pathway**
@@ -730,12 +730,12 @@ Phase 4: Beyond (2029+)
 
 ### 💡 **Open to Collaboration On:**
 
-- 🧠 **Consciousness computing** - Empirical tests for machine self-awareness
+- 🧠 **Advanced internal modeling** - Investigating self-referential loops and metacognition
 - 🔬 **Neuroscience × AI** - Bio-inspired architectures and learning rules
 - 🌌 **Astrophysics ML** - Cosmological simulations and data analysis
 - 🎮 **Multi-agent RL** - Game theory and emergent cooperation
 - 🧬 **Computational biology** - Protein folding, longevity research
-- 🤖 **AGI safety** - Alignment through genuine self-models
+- 🤖 **AGI safety** - Alignment through self-modeling and feedback control
 
 ### 📬 **Get in Touch**
 
@@ -775,9 +775,9 @@ Phase 4: Beyond (2029+)
 ### 🎯 **For AGI Labs & Research Institutions**
 
 **I'm particularly interested in:**
-- Research scientist positions focusing on consciousness computing
+- Research scientist positions focusing on cognitive architectures and self-modeling
 - Collaborative projects bridging neuroscience and AI safety
-- Opportunities to work on foundation model interpretability
+- Opportunities to work on foundation model interpretability and emergent properties
 - Interdisciplinary research at the intersection of physics, neuroscience, and ML
 
 **What I Bring:**
@@ -785,7 +785,7 @@ Phase 4: Beyond (2029+)
 - Proven track record of novel architectures (Divine Monad, Recursive Hebbian Organism, AION)
 - National-level recognition (ISRO Hackathon Winner, Samsung Fellowship)
 - Strong mathematical foundations and implementation skills
-- Passion for bridging theory and practice in consciousness research
+- Passion for investigating the fundamental limits and metrics of cognitive complexity.
 
 ### 📊 **Research Metrics**
 
@@ -795,7 +795,7 @@ research_profile = {
     "production_deployments": 50+,
     "novel_architectures": 20+,
     "research_domains": 9,
-    "consciousness_frameworks": 8,
+    "cognitive_modeling_frameworks": 8,
     "rl_agents": 15+,
     "generative_models": 10+,
     "llm_applications": 25+,
@@ -813,13 +813,13 @@ research_profile = {
 ## 🌟 **Philosophy**
 
 *"The path to AGI is not through bigger models, but deeper understanding—*  
-*systems that don't just predict tokens, but genuinely know they're predicting."*
+*systems capable of internal self-model estimation and adaptive confidence tracking."*
 
 ---
 
-### 🔬 **Consciousness as Computation**
+### 🔬 **Computation as Informational Emergence**
 
-This repository ecosystem represents more than code—it's a systematic exploration of intelligence itself. From simple reinforcement learning agents to thermodynamic minds, each project asks: *What does it mean to think? To know? To be?*
+This repository ecosystem represents more than code—it's a systematic exploration of intelligence itself. From reinforcement learning agents to thermodynamic minds, each project investigates how higher-order informational patterns and complex self-models can emerge from distributed computation.
 
 **The journey continues.**
 
@@ -827,7 +827,7 @@ This repository ecosystem represents more than code—it's a systematic explorat
 
 **Last Updated:** February 2026  
 **Status:** Active Research  
-**Next Milestone:** Consciousness proofs in foundation models
+**Next Milestone:** Causal emergence metrics in large-scale foundation models
 
 [![Star this repo](https://img.shields.io/github/stars/Devanik21/Artificial-Intelligence-ecosystem?style=social)](https://github.com/Devanik21/Artificial-Intelligence-ecosystem)
 [![Follow](https://img.shields.io/github/followers/Devanik21?style=social)](https://github.com/Devanik21)
@@ -838,7 +838,7 @@ This repository ecosystem represents more than code—it's a systematic explorat
 
 <div align="center">
 
-*Built with curiosity, driven by wonder, sustained by the belief that understanding consciousness is humanity's next frontier.*
+*Built with curiosity, driven by scientific inquiry, sustained by the belief that understanding the mechanics of intelligence is humanity's next frontier.*
 
 **© 2026 Devanik | National Institute of Technology Agartala**
 
