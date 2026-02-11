@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Devanik's AI Research Ecosystem
+#  DΞVΛΠIK's AI Research Ecosystem
 
 *Charting the Path from Intelligence to Consciousness*
 
