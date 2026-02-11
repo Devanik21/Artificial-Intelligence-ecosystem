@@ -715,11 +715,6 @@ Phase 4: Post-Biological Architectures (2029+)
 
 **Planned Graduate Research (2026+):**
 - **PhD Focus:** Computational Theories of Consciousness
-- **Target Labs:** 
-  - MIT Center for Brains, Minds & Machines
-  - DeepMind Safety Team
-  - Stanford HAI (Human-Centered AI Institute)
-  - NYU Center for Mind, Brain and Consciousness
 - **Thesis Direction:** Bridging integrated information theory with deep learning
 - **Publication Goals:** NeurIPS, ICML, Nature Neuroscience, JCS (Journal of Consciousness Studies)
 
@@ -786,24 +781,7 @@ Phase 4: Post-Biological Architectures (2029+)
 - Strong mathematical foundations and implementation skills
 - Passion for investigating the fundamental limits and metrics of cognitive complexity.
 
-### 📊 **Research Metrics**
 
-```python
-research_profile = {
-    "total_projects": 257,
-    "production_deployments": 50+,
-    "experimental_prototypes": 20+,
-    "research_domains": 9,
-    "cognitive_modeling_frameworks": 8,
-    "rl_agents": 15+,
-    "generative_models": 10+,
-    "llm_applications": 25+,
-    "space_ml_projects": 12+,
-    "hackathon_wins": 1,  # National-level ISRO
-    "fellowships": 1,     # Samsung Grade I
-    "research_internships": 1  # Astrophysics × ML
-}
-```
 
 ---
 
