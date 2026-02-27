@@ -2,7 +2,7 @@ name: AI Research Ecosystem Monograph Automation
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # 03:00 UTC (08:30 IST) - The standard for  Global Research
+    - cron: "0 4 * * *"   # 03:00 UTC (09:30 IST) - The standard for  Global Research
   workflow_dispatch:      # Manual trigger for high-fidelity state verification
 
 jobs:
