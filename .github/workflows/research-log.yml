@@ -2,7 +2,7 @@ name: AI Research Ecosystem Monograph Automation
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # 03:00 UTC (08:30 IST) - The standard for  Global Research
+    - cron: "0 3 * * *"   # 03:00 UTC (08:30 IST) - The standard for Devanik21 Global Research
   workflow_dispatch:      # Manual trigger for high-fidelity state verification
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
           IST_TIME=$(date -d "$TIMESTAMP" +'%Y-%m-%d %H:%M:%S IST')
           
           # ------------------------------------------------------------------
-          # SECTION I: RESEARCH METADATA & AFFILIATION
+          # SECTION I: HEADER & METADATA
           # ------------------------------------------------------------------
           echo "---" >> $LOG_FILE
           echo "title: DΞVΛΠIK's AI Research Ecosystem - Daily Monograph" >> $LOG_FILE
@@ -44,6 +44,7 @@ jobs:
           echo "timestamp_ist: $IST_TIME" >> $LOG_FILE
           echo "repository_count: 257" >> $LOG_FILE
           echo "determinism_index: Seed 42" >> $LOG_FILE
+          echo "workflow_path: .github/workflows/dev-log.yml" >> $LOG_FILE
           echo "---" >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "# Formal Research Monograph: Cognitive Architecture Evolution" >> $LOG_FILE
@@ -62,7 +63,7 @@ jobs:
           echo "- **Topological Superiority:** +8.23% vs. Standard Gradient Boosting on Hill Valley Datasets" >> $LOG_FILE
           echo "- **Phase Jitter Robustness:** $\approx 100\%$ under extreme temporal jitter protocols." >> $LOG_FILE
           echo "" >> $LOG_FILE
-          echo "We verify the **G.O.D. (General Omni Dimensional Optimizer)** for its dynamic sector selection, ensuring wave interference patterns are utilized rather than statistical splitting. The system maintains its lead over XGBoost on 16/20 diverse scientific datasets." >> $LOG_FILE
+          echo "We verify the **G.O.D. (General Omni Dimensional Optimizer)** for its dynamic sector selection, ensuring wave interference patterns are utilized rather than statistical splitting." >> $LOG_FILE
           echo "" >> $LOG_FILE
 
           # ------------------------------------------------------------------
@@ -120,7 +121,7 @@ jobs:
           echo "In accordance with the lead researcher's primary directive for AGI breakthroughs, every entry is verified against a protocol of **Absolute Empirical Fidelity**. All implementations are audited for first-principles mathematical grounding and causal consistency." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "### 6.2 Deterministic Manifold Verification" >> $LOG_FILE
-          echo "All experiments and computational metrics reported in this monograph are anchored to the deterministic manifold of **Seed 42**. This ensures that emergent behaviors, such as those observed in the **Recursive Hebbian Organism**, are rigorously reproducible and mathematically sound, rather than incidental stochastic variations." >> $LOG_FILE
+          echo "All experiments and computational metrics reported in this monograph are anchored to the deterministic manifold of **Seed 42**. This ensures that emergent behaviors, such as those observed in the **Recursive Hebbian Organism**, are rigorously reproducible and mathematically sound." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "### 6.3 Lipschitz Stability Audit" >> $LOG_FILE
           echo "Verification of Lipschitz continuity in sparse signal interpolation across the Aether-SPARC and Schrödinger Dream manifolds. We ensure the local error bounds remain within the target threshold $\theta$ during adaptive level-crossing sampling." >> $LOG_FILE
@@ -155,4 +156,4 @@ jobs:
           echo "AI Research Ecosystem Registry updated successfully."
           echo "Timestamp: $TIMESTAMP (UTC) | $IST_TIME (IST)"
           echo "Identity: Devanik21 | Lead AGI & Longevity Researcher"
-          echo "Affiliation: National Institute of Technology Agartala"
+          echo "Target File: .github/workflows/dev-log.yml"
