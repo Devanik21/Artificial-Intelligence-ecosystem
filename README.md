@@ -7,7 +7,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Devanik21-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Devanik21)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Devanik-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devanik/)
 [![Twitter](https://img.shields.io/badge/Twitter-@devanik2005-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/devanik2005)
-[![arXiv](https://img.shields.io/badge/arXiv-Research-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2402.xxxxx) <!-- TODO: Update arXiv link with actual publication ID -->
+[![arXiv](https://img.shields.io/badge/arXiv-Research-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2412.20091)
 
 ![Total Repositories](https://img.shields.io/badge/Total_Repositories-268-4B0082?style=for-the-badge)
 ![Research Areas](https://img.shields.io/badge/Research_Domains-9+-00CED1?style=for-the-badge)
@@ -758,7 +758,7 @@ Phase 4: Post-Biological Architectures (2029+)
 </td>
 <td align="center" width="25%">
 
-[![arXiv](https://img.shields.io/badge/arXiv-Papers-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2402.xxxxx) <!-- TODO: Update arXiv link with actual publication ID -->
+[![arXiv](https://img.shields.io/badge/arXiv-Papers-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2412.20091)
 
 **Research Publications**
 
