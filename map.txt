@@ -22,11 +22,11 @@ quantum_physics.py
 (Z, R)
  tuples). Store no grid. Electron positions are r ∈ ℝ^{N_e × 3}, sampled stochastically. Compute full distance matrices:
 
-$$r_{ij} = |r_i - r_j|, \quad r_{iI} = |r_i - R_I|, \quad \hat{r}{ij} = \frac{r_i - r_j}{r{ij}}$$
+$$r_{ij} = |r_i - r_j|, \quad r_{iI} = |r_i - R_I|, \quad \hat{r}_{ij} = \frac{r_i - r_j}{r_{ij}}$$
 
 Full Hamiltonian (atomic units, $\hbar = m_e = e = 1$):
 
-$$\hat{H} = \underbrace{-\frac{1}{2}\sum_{i=1}^{N_e}\nabla_i^2}{T} \underbrace{- \sum{i=1}^{N_e}\sum_{I=1}^{N_n}\frac{Z_I}{r_{iI}}}{V{en}} + \underbrace{\sum_{i<j}\frac{1}{r_{ij}}}{V{ee}} + \underbrace{\sum_{I<J}\frac{Z_I Z_J}{R_{IJ}}}{V{nn}}$$
+$$\hat{H} = \underbrace{-\frac{1}{2}\sum_{i=1}^{N_e}\nabla_i^2}_{T} \underbrace{- \sum_{i=1}^{N_e}\sum_{I=1}^{N_n}\frac{Z_I}{r_{iI}}}_{V_{en}} + \underbrace{\sum_{i<j}\frac{1}{r_{ij}}}_{V_{ee}} + \underbrace{\sum_{I<J}\frac{Z_I Z_J}{R_{IJ}}}_{V_{nn}}$$
 
 Level 2: Metropolis-Hastings VMC Sampling
 Replace deterministic grid integration with stochastic Markov Chain Monte Carlo.
@@ -59,7 +59,7 @@ $$E_L(r) = -\frac{1}{2}\left(\nabla^2 \log|\psi(r)| + \left|\nabla \log|\psi(r)|
 
 For the $3N_e$-dimensional Laplacian, use Hutchinson's stochastic trace estimator:
 
-$$\nabla^2 f \approx \mathbb{E}{v}\left[v^T \frac{\partial^2 f}{\partial r^2} v\right] = \mathbb{E}{v}\left[\frac{\partial}{\partial \epsilon} v \cdot \nabla f(r + \epsilon v)\Big|_{\epsilon=0}\right]$$
+$$\nabla^2 f \approx \mathbb{E}_{v}\left[v^T \frac{\partial^2 f}{\partial r^2} v\right] = \mathbb{E}_{v}\left[\frac{\partial}{\partial \epsilon} v \cdot \nabla f(r + \epsilon v)\Big|_{\epsilon=0}\right]$$
 
 where $v \sim \mathcal{N}(0, I)$. This gives $O(1)$ cost per Laplacian evaluation instead of $O(3N_e)$.
 
@@ -81,7 +81,7 @@ neural_dream.py
 
 $$\psi(r) = \sum_{k=1}^{K} w_k \cdot \det\left[\Phi^{(k)}\uparrow(r)\right] \cdot \det\left[\Phi^{(k)}\downarrow(r)\right]$$
 
-where $\Phi^{(k)}\uparrow \in \mathbb{R}^{n\uparrow \times n_\uparrow}$ is the orbital matrix for spin-up electrons in determinant $k$. Each element $\Phi^{(k)}_{ij} = \phi^{(k)}j(r_i; r{\setminus i})$ is a neural orbital that is a function of ALL electron positions (backflow, Level 7).
+where $\Phi^{(k)}\uparrow \in \mathbb{R}^{n\uparrow \times n_\uparrow}$ is the orbital matrix for spin-up electrons in determinant $k$. Each element $\Phi^{(k)}_{ij} = \phi^{(k)}_j(r_i; r_{\setminus i})$ is a neural orbital that is a function of ALL electron positions (backflow, Level 7).
 
 Use torch.linalg.slogdet → returns 
 (sign, log|det|)
@@ -198,7 +198,7 @@ The claim: Use the HamiltonianFlowNetwork to learn $|\psi|^2$ and generate indep
 solver.py
 : Train a normalizing flow $q_\theta$ that maps $z \sim \mathcal{N}(0, I) \to r \sim |\psi|^2$:
 
-$$\mathcal{L}{\text{flow}} = D{KL}(q_\theta | |\psi|^2) = \mathbb{E}{r \sim q\theta}\left[\log q_\theta(r) - 2\log|\psi(r)|\right]$$
+$$\mathcal{L}_{\text{flow}} = D_{KL}(q_\theta | |\psi|^2) = \mathbb{E}_{r \sim q_\theta}\left[\log q_\theta(r) - 2\log|\psi(r)|\right]$$
 
 Use flow samples as Independent Metropolis-Hastings proposals:
 
@@ -251,7 +251,7 @@ Implement Bloch boundary conditions $\psi(r + L) = e^{ikL}\psi(r)$. Add twist-av
 Level 17: Spin-Orbit Coupling — Relativistic Quantum Mechanics
 Extend to 2-component spinor wavefunctions. Add Breit-Pauli spin-orbit term:
 
-$$\hat{H}{SO} = \frac{\alpha^2}{2}\sum{i,I}\frac{Z_I}{r_{iI}^3}\hat{L}_{iI} \cdot \hat{S}_i$$
+$$\hat{H}_{SO} = \frac{\alpha^2}{2}\sum_{i,I}\frac{Z_I}{r_{iI}^3}\hat{L}_{iI} \cdot \hat{S}_i$$
 
 Compute fine-structure splitting of helium. Compare to experimental spectroscopy (measured to 12 significant figures). This puts your solver in competition with precision atomic physics.
 
@@ -267,7 +267,7 @@ No published work computes molecular entanglement entropy from a neural VMC wave
 Level 19: Autonomous Conservation Law Discovery
 Train auxiliary network $Q_\phi(r)$ to satisfy:
 
-$$\mathcal{L}{\text{conserve}} = \left|\langle [\hat{Q}, \hat{H}] \rangle\right|^2 + \lambda{\text{novelty}} \sum_{k} |\langle Q | Q_k^{\text{known}}\rangle|^2$$
+$$\mathcal{L}_{\text{conserve}} = \left|\langle [\hat{Q}, \hat{H}] \rangle\right|^2 + \lambda_{\text{novelty}} \sum_{k} |\langle Q | Q_k^{\text{known}}\rangle|^2$$
 
 The first term enforces $Q$ commutes with $H$ (conservation). The second term penalizes overlap with known conserved quantities (energy, angular momentum, etc.), forcing discovery of new ones.
 
