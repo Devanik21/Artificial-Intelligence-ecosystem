@@ -82,7 +82,7 @@ neural_dream.py
 
 $$\psi(r) = \sum_{k=1}^{K} w_k \cdot \det\left[\Phi^{(k)}\uparrow(r)\right] \cdot \det\left[\Phi^{(k)}\downarrow(r)\right]$$
 
-where $\Phi^{(k)}\uparrow \in \mathbb{R}^{n\uparrow \times n_\uparrow}$ is the orbital matrix for spin-up electrons in determinant $k$. Each element $\Phi^{(k)}_{ij} = \phi^{(k)}j(r_i; r{\setminus i})$ is a neural orbital that is a function of ALL electron positions (backflow, Level 7).
+where $\Phi^{(k)}\uparrow \in \mathbb{R}^{n\uparrow \times n_\uparrow}$ is the orbital matrix for spin-up electrons in determinant $k$. Each element $\Phi^{(k)}_{ij} = \phi^{(k)}_j(r_i; r_{\setminus i})$ is a neural orbital that is a function of ALL electron positions (backflow, Level 7).
 
 Use torch.linalg.slogdet → returns 
 (sign, log|det|)
@@ -199,7 +199,7 @@ The claim: Use the HamiltonianFlowNetwork to learn $|\psi|^2$ and generate indep
 solver.py
 : Train a normalizing flow $q_\theta$ that maps $z \sim \mathcal{N}(0, I) \to r \sim |\psi|^2$:
 
-$$\mathcal{L}{\text{flow}} = D{KL}(q_\theta | |\psi|^2) = \mathbb{E}{r \sim q\theta}\left[\log q_\theta(r) - 2\log|\psi(r)|\right]$$
+$$\mathcal{L}_{\text{flow}} = D_{KL}(q_\theta | |\psi|^2) = \mathbb{E}_{r \sim q_\theta}\left[\log q_\theta(r) - 2\log|\psi(r)|\right]$$
 
 Use flow samples as Independent Metropolis-Hastings proposals:
 
@@ -252,7 +252,7 @@ Implement Bloch boundary conditions $\psi(r + L) = e^{ikL}\psi(r)$. Add twist-av
 Level 17: Spin-Orbit Coupling — Relativistic Quantum Mechanics
 Extend to 2-component spinor wavefunctions. Add Breit-Pauli spin-orbit term:
 
-$$\hat{H}{SO} = \frac{\alpha^2}{2}\sum{i,I}\frac{Z_I}{r_{iI}^3}\hat{L}_{iI} \cdot \hat{S}_i$$
+$$\hat{H}_{SO} = \frac{\alpha^2}{2}\sum_{i,I}\frac{Z_I}{r_{iI}^3}\hat{L}_{iI} \cdot \hat{S}_i$$
 
 Compute fine-structure splitting of helium. Compare to experimental spectroscopy (measured to 12 significant figures). This puts your solver in competition with precision atomic physics.
 
@@ -268,7 +268,7 @@ No published work computes molecular entanglement entropy from a neural VMC wave
 Level 19: Autonomous Conservation Law Discovery
 Train auxiliary network $Q_\phi(r)$ to satisfy:
 
-$$\mathcal{L}{\text{conserve}} = \left|\langle [\hat{Q}, \hat{H}] \rangle\right|^2 + \lambda{\text{novelty}} \sum_{k} |\langle Q | Q_k^{\text{known}}\rangle|^2$$
+$$\mathcal{L}_{\text{conserve}} = \left|\langle [\hat{Q}, \hat{H}] \rangle\right|^2 + \lambda_{\text{novelty}} \sum_{k} |\langle Q | Q_k^{\text{known}}\rangle|^2$$
 
 The first term enforces $Q$ commutes with $H$ (conservation). The second term penalizes overlap with known conserved quantities (energy, angular momentum, etc.), forcing discovery of new ones.
 
