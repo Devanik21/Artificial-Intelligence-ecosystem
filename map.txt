@@ -23,11 +23,11 @@ quantum_physics.py
 (Z, R)
  tuples). Store no grid. Electron positions are r ∈ ℝ^{N_e × 3}, sampled stochastically. Compute full distance matrices:
 
-$$r_{ij} = |r_i - r_j|, \quad r_{iI} = |r_i - R_I|, \quad \hat{r}{ij} = \frac{r_i - r_j}{r{ij}}$$
+$$r_{ij} = |r_i - r_j|, \quad r_{iI} = |r_i - R_I|, \quad \hat{r}_{ij} = \frac{r_i - r_j}{r_{ij}}$$
 
 Full Hamiltonian (atomic units, $\hbar = m_e = e = 1$):
 
-$$\hat{H} = \underbrace{-\frac{1}{2}\sum_{i=1}^{N_e}\nabla_i^2}{T} \underbrace{- \sum{i=1}^{N_e}\sum_{I=1}^{N_n}\frac{Z_I}{r_{iI}}}{V{en}} + \underbrace{\sum_{i<j}\frac{1}{r_{ij}}}{V{ee}} + \underbrace{\sum_{I<J}\frac{Z_I Z_J}{R_{IJ}}}{V{nn}}$$
+$$\hat{H} = \underbrace{-\frac{1}{2}\sum_{i=1}^{N_e}\nabla_i^2}_{T} \underbrace{- \sum_{i=1}^{N_e}\sum_{I=1}^{N_n}\frac{Z_I}{r_{iI}}}_{V_{en}} + \underbrace{\sum_{i<j}\frac{1}{r_{ij}}}_{V_{ee}} + \underbrace{\sum_{I<J}\frac{Z_I Z_J}{R_{IJ}}}_{V_{nn}}$$
 
 Level 2: Metropolis-Hastings VMC Sampling
 Replace deterministic grid integration with stochastic Markov Chain Monte Carlo.
@@ -60,7 +60,7 @@ $$E_L(r) = -\frac{1}{2}\left(\nabla^2 \log|\psi(r)| + \left|\nabla \log|\psi(r)|
 
 For the $3N_e$-dimensional Laplacian, use Hutchinson's stochastic trace estimator:
 
-$$\nabla^2 f \approx \mathbb{E}{v}\left[v^T \frac{\partial^2 f}{\partial r^2} v\right] = \mathbb{E}{v}\left[\frac{\partial}{\partial \epsilon} v \cdot \nabla f(r + \epsilon v)\Big|_{\epsilon=0}\right]$$
+$$\nabla^2 f \approx \mathbb{E}_{v}\left[v^T \frac{\partial^2 f}{\partial r^2} v\right] = \mathbb{E}_{v}\left[\frac{\partial}{\partial \epsilon} v \cdot \nabla f(r + \epsilon v)\Big|_{\epsilon=0}\right]$$
 
 where $v \sim \mathcal{N}(0, I)$. This gives $O(1)$ cost per Laplacian evaluation instead of $O(3N_e)$.
 
@@ -99,7 +99,7 @@ neural_dream.py
 
 $$\psi = e^{J(r)} \cdot \psi_{\text{det}}(r)$$
 
-$$J(r) = \sum_{i,I} \left(-Z_I r_{iI} + \text{NN}{en}(r{iI})\right) + \sum_{i<j} \left(\frac{a \cdot r_{ij}}{1 + b \cdot r_{ij}} + \text{NN}{ee}(r{ij})\right)$$
+$$J(r) = \sum_{i,I} \left(-Z_I r_{iI} + \text{NN}_{en}(r_{iI})\right) + \sum_{i<j} \left(\frac{a \cdot r_{ij}}{1 + b \cdot r_{ij}} + \text{NN}_{ee}(r_{ij})\right)$$
 
 Cusp values (exact, from Kato's theorem):
 
@@ -115,7 +115,7 @@ neural_dream.py
 : Implement $L$-layer electron interaction network:
 
 Layer l:
-  h_i^{(l)} = h_i^{(l-1)} + σ(W₁ · h_i^{(l-1)} + W₂ · mean_j[g(h_i^{(l-1)}, h_j^{(l-1)}, r_{ij})])
+  h_i^{(l)} = h_i^{(l-1)} + σ(W_1 · h_i^{(l-1)} + W_2 · mean_j[g(h_i^{(l-1)}, h_j^{(l-1)}, r_{ij})])
 After $L$ layers, each electron has a feature vector encoding its relationship to every other electron. These features become the input to the orbital functions:
 
 $$\phi^{(k)}_j(r_i) = \text{MLP}(h_i^{(L)})_j$$
