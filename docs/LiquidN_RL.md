@@ -1,223 +1,320 @@
-# Liquid-N Advantage Estimation
+# **Liquid-N Advantage Estimation**
 
-## Adaptive Temporal Credit Assignment via Leaky Horizon Dynamics
+## **Adaptive Temporal Credit Assignment via Leaky Horizon Dynamics**
 
-Nik Prince
+**DevaNik**
 2026
 
 ---
 
-## Abstract
+# **Abstract**
 
-Temporal credit assignment remains one of the central challenges in reinforcement learning (RL). Existing advantage estimation techniques such as n-step returns and Generalized Advantage Estimation (GAE) approximate the true advantage function using fixed or geometrically weighted horizons. These estimators impose rigid bias–variance trade-offs governed by static hyperparameters.
+Temporal credit assignment remains one of the central challenges in reinforcement learning (RL). Existing advantage estimation techniques such as **n-step returns** and **Generalized Advantage Estimation (GAE)** approximate the true advantage function using fixed or geometrically weighted horizons. These estimators impose rigid **bias–variance trade-offs** governed by static hyperparameters.
 
-This work proposes Liquid-N Advantage Estimation (LNAE), a dynamically adaptive advantage estimator where the temporal horizon evolves during learning. Instead of a fixed decay parameter, a time-varying horizon parameter β_t modulates the effective credit assignment length. The resulting estimator transforms the advantage computation into a trajectory-dependent temporal filter capable of adapting to reward dynamics, prediction error, and environmental volatility.
+This work proposes **Liquid-N Advantage Estimation (LNAE)**, a dynamically adaptive advantage estimator where the temporal horizon evolves during learning. Instead of a fixed decay parameter, a **time-varying horizon parameter** $\beta_t$ modulates the effective credit assignment length.
 
-Liquid-N generalizes both n-step returns and GAE as special cases. We derive the mathematical formulation, analyze the bias–variance properties, and present an experimental protocol for empirical evaluation.
+The resulting estimator transforms advantage computation into a **trajectory-dependent temporal filter** capable of adapting to reward dynamics, prediction error, and environmental volatility.
 
----
-
-## 1. Introduction
-
-Reinforcement learning algorithms rely on estimating the advantage function
-
-A^π(s_t, a_t) = Q^π(s_t,a_t) − V^π(s_t)
-
-in order to compute policy gradients.
-
-Since the action-value function Q^π is generally unknown, advantage estimates are constructed from sampled trajectories. The quality of these estimators strongly influences training stability, variance of policy gradients, and convergence speed.
-
-Two estimators dominate modern actor–critic algorithms:
-
-• n-step returns
-• Generalized Advantage Estimation (GAE)
-
-Both define temporal weighting kernels that determine how future rewards influence gradient updates.
-
-However, these kernels are fixed during training. The effective horizon length is determined by hyperparameters (n or λ) which remain constant regardless of environment dynamics.
-
-In many environments this assumption is suboptimal because reward noise, prediction error, and state transitions vary across time. A static estimator cannot adapt its temporal horizon accordingly.
-
-This paper introduces Liquid-N Advantage Estimation, where the horizon parameter evolves dynamically based on trajectory information.
+Liquid-N generalizes both **n-step returns** and **GAE** as special cases. We derive the mathematical formulation, analyze bias–variance properties, and outline an empirical evaluation protocol.
 
 ---
 
-## 2. Background
+# **1. Introduction**
 
-### 2.1 n-Step Returns
+Reinforcement learning algorithms rely on estimating the **advantage function**.
+
+$$
+\mathbf{A^{\pi}(s_t,a_t) = Q^{\pi}(s_t,a_t) - V^{\pi}(s_t)}
+$$
+
+This quantity determines the direction of **policy gradient updates**.
+
+Because the true action-value function $Q^{\pi}$ is unknown, advantage estimates must be constructed from **sampled trajectories**.
+
+The quality of this estimator directly affects:
+
+* policy gradient variance
+* training stability
+* convergence speed
+
+Modern actor–critic algorithms rely primarily on two estimators:
+
+• **n-step returns**
+• **Generalized Advantage Estimation (GAE)**
+
+These estimators define **temporal weighting kernels** that determine how future rewards influence gradient updates.
+
+However, their horizon structure is **static**. Hyperparameters such as $n$ or $\lambda$ remain fixed during training regardless of environmental dynamics.
+
+In practice, reward noise, value prediction error, and state transitions vary significantly across time. A fixed estimator cannot adapt its horizon accordingly.
+
+This motivates a **dynamic horizon estimator**.
+
+---
+
+# **2. Background**
+
+## **2.1 n-Step Returns**
 
 The n-step return estimator is defined as
 
-R_t^(n) = Σ_{k=0}^{n−1} γ^k r_{t+k} + γ^n V(s_{t+n})
+$$
+\mathbf{R_t^{(n)} = \sum_{k=0}^{n-1} \gamma^k r_{t+k} + \gamma^n V(s_{t+n})}
+$$
 
-The advantage estimate becomes
+The corresponding advantage estimate is
 
-A_t^(n) = R_t^(n) − V(s_t)
+$$
+\mathbf{A_t^{(n)} = R_t^{(n)} - V(s_t)}
+$$
 
-Small values of n introduce higher bias but lower variance. Large values of n reduce bias but increase variance.
+Properties:
 
-### 2.2 Generalized Advantage Estimation
-
-Define the temporal-difference residual
-
-δ_t = r_t + γ V(s_{t+1}) − V(s_t)
-
-GAE computes the advantage estimate
-
-A_t^{GAE(λ)} = Σ_{l=0}^{∞} (γλ)^l δ_{t+l}
-
-GAE forms a geometric mixture of n-step estimators. The parameter λ controls the bias–variance trade-off.
-
-However λ remains constant during training.
+* small $n$ → higher bias, lower variance
+* large $n$ → lower bias, higher variance
 
 ---
 
-## 3. Problem Statement
+## **2.2 Generalized Advantage Estimation (GAE)**
 
-Current advantage estimators assume stationary temporal weighting kernels.
+Define the **temporal difference residual**:
 
-Formally, the weight applied to a TD residual at lag l is
+$$
+\mathbf{\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)}
+$$
 
-w(l) = (γλ)^l
+GAE computes the advantage estimate:
 
-for GAE.
+$$
+\mathbf{A_t^{GAE(\lambda)} = \sum_{l=0}^{\infty} (\gamma \lambda)^l \delta_{t+l}}
+$$
 
-This fixed structure prevents the estimator from adapting to changes in trajectory statistics such as reward volatility or prediction error magnitude.
+Interpretation:
 
-An ideal estimator should instead use
+GAE constructs a **geometric mixture of n-step estimators**.
 
-w_t(l) = f(trajectory dynamics)
-
-where the temporal weighting evolves during learning.
-
----
-
-## 4. Liquid-N Advantage Estimation
-
-We introduce a time-dependent horizon modulation parameter
-
-β_t ∈ [0,1]
-
-The Liquid-N advantage estimator is
-
-A_t^Liquid = Σ_{l=0}^{∞} ( Π_{i=0}^{l−1} γ β_{t+i} ) δ_{t+l}
-
-This replaces the constant λ used in GAE with a time-varying parameter.
-
-### 4.1 Special Cases
-
-If β_t = λ (constant)
-
-A_t^Liquid = Σ (γλ)^l δ_{t+l}
-
-which reduces exactly to GAE.
-
-If β_t = 1 for l < n and 0 otherwise, the estimator becomes the n-step estimator.
-
-Thus Liquid-N forms a strict generalization of both methods.
+However, the parameter $\lambda$ remains **constant throughout training**.
 
 ---
 
-## 5. Dynamic Horizon Update
+# **3. Problem Statement**
 
-The horizon parameter evolves through a leaky update rule
+Existing estimators assume **stationary temporal weighting kernels**.
 
-β_{t+1} = (1 − α) β_t + α f(ξ_t)
+For GAE, the weight applied to a TD residual at lag $l$ is
+
+$$
+\mathbf{w(l) = (\gamma \lambda)^l}
+$$
+
+This structure cannot adapt to changes in trajectory statistics such as:
+
+* reward volatility
+* prediction error magnitude
+* environment stochasticity
+
+An ideal estimator would instead allow
+
+$$
+\mathbf{w_t(l) = f(trajectory\ dynamics)}
+$$
+
+where the weighting kernel evolves during learning.
+
+---
+
+# **4. Liquid-N Advantage Estimation**
+
+We introduce a **time-dependent horizon modulation parameter**:
+
+$$
+\mathbf{\beta_t \in [0,1]}
+$$
+
+The **Liquid-N advantage estimator** is defined as
+
+$$
+\mathbf{A_t^{Liquid} = \sum_{l=0}^{\infty} \left( \prod_{i=0}^{l-1} \gamma \beta_{t+i} \right) \delta_{t+l}}
+$$
+
+This replaces the constant $\lambda$ used in GAE with a **time-varying parameter**.
+
+---
+
+## **4.1 Special Cases**
+
+### Constant Horizon (GAE)
+
+If
+
+$$
+\beta_t = \lambda
+$$
+
+then
+
+$$
+A_t^{Liquid} = \sum_{l=0}^{\infty}(\gamma \lambda)^l \delta_{t+l}
+$$
+
+which reduces exactly to **GAE**.
+
+---
+
+### Deterministic Horizon (n-step)
+
+If
+
+$$
+\beta_t =
+\begin{cases}
+1 & l < n \
+0 & l \ge n
+\end{cases}
+$$
+
+then the estimator becomes the **n-step estimator**.
+
+Thus **Liquid-N forms a strict generalization** of both methods.
+
+---
+
+# **5. Dynamic Horizon Update**
+
+The horizon parameter evolves through a **leaky integration rule**:
+
+$$
+\mathbf{\beta_{t+1} = (1-\alpha)\beta_t + \alpha f(\xi_t)}
+$$
 
 where
 
-ξ_t = (s_t, a_t, r_{t+1}, s_{t+1})
+$$
+\xi_t = (s_t, a_t, r_{t+1}, s_{t+1})
+$$
 
-and α is the leak rate controlling adaptation speed.
+and
 
----
+$$
+0 < \alpha < 1
+$$
 
-## 6. Candidate Adaptation Functions
-
-### TD-error adaptation
-
-f = sigmoid(|δ_t|)
-
-### Uncertainty-based adaptation
-
-f = σ_V^2 / (σ_V^2 + δ_t^2)
-
-### Reward volatility
-
-f = |r_t − r_{t−1}| / (|r_t| + ε)
-
-These functions allow the estimator to shorten or extend its horizon based on trajectory dynamics.
+controls the **adaptation speed**.
 
 ---
 
-## 7. Algorithm Integration
+# **6. Candidate Adaptation Functions**
 
-Liquid-N can replace GAE in actor–critic algorithms such as PPO or A2C.
+## TD-error based adaptation
+
+$$
+f = \sigma(|\delta_t|)
+$$
+
+Interpretation:
+
+Large prediction errors **shorten the effective horizon**.
+
+---
+
+## Uncertainty-based adaptation
+
+$$
+f = \frac{\sigma_V^2}{\sigma_V^2 + \delta_t^2}
+$$
+
+where $\sigma_V^2$ represents **value uncertainty**.
+
+---
+
+## Reward volatility
+
+$$
+f = \frac{|r_t - r_{t-1}|}{|r_t| + \epsilon}
+$$
+
+Interpretation:
+
+High reward volatility leads to **shorter temporal credit assignment**.
+
+---
+
+# **7. Algorithm Integration**
+
+Liquid-N can replace **GAE** in any actor–critic algorithm such as **PPO** or **A2C**.
 
 ### Pseudocode
 
-for each timestep t:
-
 ```
-δ_t = r_t + γ V(s_{t+1}) − V(s_t)
+for timestep t:
 
-β_t = (1 − α) β_{t−1} + α f(ξ_t)
+    δ_t = r_t + γ * V(s_{t+1}) - V(s_t)
 
-running_weight = γ β_t
+    β_t = (1 - α) * β_{t-1} + α * f(ξ_t)
 
-A_t = δ_t
+    running_weight = γ * β_t
 
-for future step l:
+    A_t = δ_t
 
-    A_t += running_weight * δ_{t+l}
+    for future step l:
 
-    running_weight *= γ β_{t+l}
+        A_t += running_weight * δ_{t+l}
+
+        running_weight *= γ * β_{t+l}
 ```
 
 ---
 
-## 8. Bias–Variance Interpretation
+# **8. Bias–Variance Interpretation**
 
-Define the expected effective horizon
+Define the **expected effective horizon**:
 
-H_t = Σ_{l=0}^{∞} Π_{i=0}^{l−1} β_{t+i}
+$$
+\mathbf{H_t = \sum_{l=0}^{\infty} \prod_{i=0}^{l-1} \beta_{t+i}}
+$$
 
-High β values extend the horizon while low values shorten it.
+High $\beta$ values extend the horizon while low values shorten it.
 
-The estimator therefore adapts its bias–variance trade-off dynamically.
-
----
-
-## 9. Experimental Protocol
-
-Baselines:
-
-• n-step advantage estimation
-• Generalized Advantage Estimation
-
-Algorithms:
-
-• A2C
-• PPO
-
-Environments:
-
-• CartPole-v1
-• LunarLander-v2
-• HalfCheetah-v4
-
-Metrics:
-
-• policy loss
-• value loss
-• training stability
-• sample efficiency
-
-Primary comparison will analyze loss curves across training epochs.
+Thus the estimator **dynamically adapts the bias–variance trade-off**.
 
 ---
 
-## 10. Hypothesis
+# **9. Experimental Protocol**
+
+### Baselines
+
+* n-step advantage estimation
+* Generalized Advantage Estimation
+
+### Algorithms
+
+* A2C
+* PPO
+
+### Environments
+
+* CartPole-v1
+* LunarLander-v2
+* HalfCheetah-v4
+
+### Metrics
+
+* policy loss
+* value loss
+* training stability
+* sample efficiency
+
+Primary comparison:
+
+$$
+\mathbf{Policy\ Loss\ vs\ Training\ Epochs}
+$$
+
+across estimators.
+
+---
+
+# **10. Hypothesis**
 
 Liquid-N Advantage Estimation may:
 
@@ -227,18 +324,20 @@ Liquid-N Advantage Estimation may:
 
 ---
 
-## 11. Future Work
+# **11. Future Work**
 
-Possible extensions include
+Potential extensions include:
 
-• meta-learning β dynamics
-• Bayesian horizon estimation
-• spectral reward analysis
+* meta-learning horizon dynamics
+* Bayesian horizon estimation
+* spectral analysis of reward signals
 
 ---
 
-## 12. Conclusion
+# **12. Conclusion**
 
-Liquid-N Advantage Estimation introduces a dynamically adaptive horizon for advantage computation. By allowing temporal credit assignment to evolve with trajectory dynamics, the estimator provides a flexible mechanism for bias–variance control.
+**Liquid-N Advantage Estimation** introduces a dynamically adaptive horizon for advantage computation.
 
-This framework opens new directions for adaptive reinforcement learning algorithms.
+By allowing temporal credit assignment to evolve with trajectory dynamics, the estimator provides a flexible mechanism for **adaptive bias–variance control**.
+
+This framework opens new directions for **adaptive reinforcement learning algorithms and estimator design**.
