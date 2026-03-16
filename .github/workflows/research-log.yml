@@ -21,7 +21,7 @@ jobs:
       - name: 02. Identity Synthesis (Academic Alignment)
         run: |
           # Anchoring the repository activity to the Devanik21 verified identity
-          # This ensures the 270-repo graph correctly reflects the 8:30 AM IST contribution tiles
+          # This ensures the 188-repo graph correctly reflects the 8:30 AM IST contribution tiles
           git config user.name "Devanik21"
           git config user.email "devanik2005@gmail.com"
 
@@ -42,7 +42,8 @@ jobs:
           echo "affiliation: NIT Agartala | Samsung Convergence Software Fellow (IISc)" >> $LOG_FILE
           echo "timestamp_utc: $TIMESTAMP" >> $LOG_FILE
           echo "timestamp_ist: $IST_TIME" >> $LOG_FILE
-          echo "repository_count: 190" >> $LOG_FILE
+          # TODO: Consider fetching the repository count dynamically via GitHub API instead of hardcoding.
+          echo "repository_count: 188" >> $LOG_FILE
           echo "research_domains: 9+" >> $LOG_FILE
           echo "determinism_index: Seed 42" >> $LOG_FILE
           echo "workflow_path: .github/workflows/dev-log.yml" >> $LOG_FILE
@@ -56,7 +57,7 @@ jobs:
           # SECTION II: ABSTRACT & ECOSYSTEM OVERVIEW
           # ------------------------------------------------------------------
           echo "## I. Ecosystem Abstract & Domain Sweep" >> $LOG_FILE
-          echo "This registry formally documents the deterministic state of the 190-repository AI Research Ecosystem. Our core objective is engineering high-reliability cognitive architectures grounded in first-principles physics and information theory." >> $LOG_FILE
+          echo "This registry formally documents the deterministic state of the 188-repository AI Research Ecosystem. Our core objective is engineering high-reliability cognitive architectures grounded in first-principles physics and information theory." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "### Active Research Domains" >> $LOG_FILE
           echo "1. **Metacognition & Cognitive Architecture** (causa-sui, Thermodynamic Mind)" >> $LOG_FILE
