@@ -41,3 +41,6 @@
     - **Mathematical Tool:** Topological Data Analysis (TDA) using Persistent Homology.
     - **The Logic:** Calculates Betti Numbers ($\beta_1$). If the embedding points during generation form a "loop" (a hole), it indicates a logical contradiction or hallucination.
 - **Streamlit App:** A live 3D interactive scatter plot of the conversation. If a "Red Hole" appears in the cluster geometry, a "Hallucination Detected" alarm triggers. <!-- TODO: Add live performance metrics or latency benchmarks when available -->
+
+
+<!-- Jules-Patrol: The Titan Quartet presents a highly ambitious and conceptually dense roadmap. A valuable future addition could be architectural diagrams mapping these domain intersections (e.g., Genomics ↔ NLP) to aid onboarding. -->
