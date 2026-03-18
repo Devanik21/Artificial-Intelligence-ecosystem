@@ -599,7 +599,7 @@ This portfolio represents a rigorous engineering effort in **distributed state e
 
 ### 📊 **Engineering Impact**
 
-📈 **189 Active Repositories** <!-- TODO: Consider automating the update of this repository count to keep it dynamically current. -->
+📈 **189 Active Repositories** *(Public)* <!-- TODO: Consider automating the update of this repository count to keep it dynamically current. -->
    - Comprehensive exploration across 9 major AI domains
    - 50+ production-ready applications deployed
    - 20+ experimental architecture prototypes and research frameworks
