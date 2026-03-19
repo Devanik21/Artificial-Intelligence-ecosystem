@@ -7,7 +7,7 @@ timestamp_ist: 2026-02-27 07:26:27 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -108,7 +108,7 @@ timestamp_ist: 2026-02-27 07:27:11 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -209,7 +209,7 @@ timestamp_ist: 2026-02-27 07:49:44 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -310,7 +310,7 @@ timestamp_ist: 2026-02-28 04:56:58 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -411,7 +411,7 @@ timestamp_ist: 2026-03-01 05:18:32 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -512,7 +512,7 @@ timestamp_ist: 2026-03-02 05:16:16 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -613,7 +613,7 @@ timestamp_ist: 2026-03-03 05:15:24 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -714,7 +714,7 @@ timestamp_ist: 2026-03-04 05:09:57 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -815,7 +815,7 @@ timestamp_ist: 2026-03-05 05:13:16 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -916,7 +916,7 @@ timestamp_ist: 2026-03-06 05:11:12 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1017,7 +1017,7 @@ timestamp_ist: 2026-03-07 05:01:34 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1118,7 +1118,7 @@ timestamp_ist: 2026-03-08 05:11:02 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1219,7 +1219,7 @@ timestamp_ist: 2026-03-09 05:20:20 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1320,7 +1320,7 @@ timestamp_ist: 2026-03-10 05:11:17 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1423,7 +1423,7 @@ timestamp_ist: 2026-03-12 05:16:52 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1524,7 +1524,7 @@ timestamp_ist: 2026-03-13 05:14:19 IST
 repository_count: 257
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1582,7 +1582,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2240 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2240
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1625,7 +1625,7 @@ timestamp_ist: 2026-03-14 05:12:09 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1683,7 +1683,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2284 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2284
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1726,7 +1726,7 @@ timestamp_ist: 2026-03-15 05:37:48 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1784,7 +1784,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2343 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2343
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1827,7 +1827,7 @@ timestamp_ist: 2026-03-16 05:50:19 IST
 repository_count: 270
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1885,7 +1885,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2470 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2470
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1928,7 +1928,7 @@ timestamp_ist: 2026-03-17 05:22:27 IST
 repository_count: 190
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -1986,7 +1986,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2230 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2230
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2029,7 +2029,7 @@ timestamp_ist: 2026-03-18 05:27:14 IST
 repository_count: 190
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -2087,7 +2087,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2312 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2312
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2130,7 +2130,7 @@ timestamp_ist: 2026-03-19 05:23:31 IST
 repository_count: 190
 research_domains: 9+
 determinism_index: Seed 42
-workflow_path: .github/workflows/dev-log.yml
+workflow_path: .github/workflows/research-log.yml
 ---
 
 # Formal Research Monograph: Cognitive Architecture Evolution
@@ -2188,7 +2188,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2245 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2245
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
