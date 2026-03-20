@@ -36,16 +36,18 @@ jobs:
           # ------------------------------------------------------------------
           # SECTION I: HEADER & METADATA
           # ------------------------------------------------------------------
+          REPO_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
+
           echo "---" >> $LOG_FILE
           echo "title: DΞVΛΠIK's AI Research Ecosystem - Daily Monograph" >> $LOG_FILE
           echo "author: Devanik21 (Lead AGI & Longevity Researcher)" >> $LOG_FILE
           echo "affiliation: NIT Agartala | Samsung Convergence Software Fellow (IISc)" >> $LOG_FILE
           echo "timestamp_utc: $TIMESTAMP" >> $LOG_FILE
           echo "timestamp_ist: $IST_TIME" >> $LOG_FILE
-          echo "repository_count: 190" >> $LOG_FILE
+          echo "repository_count: $REPO_COUNT" >> $LOG_FILE
           echo "research_domains: 9+" >> $LOG_FILE
           echo "determinism_index: Seed 42" >> $LOG_FILE
-          echo "workflow_path: .github/workflows/dev-log.yml" >> $LOG_FILE
+          echo "workflow_path: .github/workflows/research-log.yml" >> $LOG_FILE
           echo "---" >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "# Formal Research Monograph: Cognitive Architecture Evolution" >> $LOG_FILE
@@ -56,7 +58,7 @@ jobs:
           # SECTION II: ABSTRACT & ECOSYSTEM OVERVIEW
           # ------------------------------------------------------------------
           echo "## I. Ecosystem Abstract & Domain Sweep" >> $LOG_FILE
-          echo "This registry formally documents the deterministic state of the 190-repository AI Research Ecosystem. Our core objective is engineering high-reliability cognitive architectures grounded in first-principles physics and information theory." >> $LOG_FILE
+          echo "This registry formally documents the deterministic state of the ${REPO_COUNT}-repository AI Research Ecosystem. Our core objective is engineering high-reliability cognitive architectures grounded in first-principles physics and information theory." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "### Active Research Domains" >> $LOG_FILE
           echo "1. **Metacognition & Cognitive Architecture** (causa-sui, Thermodynamic Mind)" >> $LOG_FILE
@@ -192,4 +194,4 @@ jobs:
           echo "AI Research Ecosystem Registry updated successfully."
           echo "Timestamp: $TIMESTAMP (UTC) | $IST_TIME (IST)"
           echo "Identity: Devanik21 | Lead AGI & Longevity Researcher"
-          echo "Target File: .github/workflows/dev-log.yml"
+          echo "Target File: .github/workflows/research-log.yml"
