@@ -179,17 +179,38 @@ jobs:
             exit 1
           fi
 
-      - name: 05. Research Registry Commit & Push
+      - name: 05. README.md Dynamic Repository Count Automation
+        run: |
+          echo "Updating dynamically changing repository counts in README.md..."
+          REPO_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
+
+          if [ -n "$REPO_COUNT" ]; then
+            sed -i -E "s/Total_Repositories-[0-9]+-/Total_Repositories-${REPO_COUNT}-/g" README.md
+            sed -i -E "s/📈 \*\*[0-9]+ Active Repositories\*\*/📈 \*\*${REPO_COUNT} Active Repositories\*\*/g" README.md
+            sed -i -E "s/- [0-9]+ repositories demonstrating breadth/- ${REPO_COUNT} repositories demonstrating breadth/g" README.md
+            echo "Dynamic repository count updated to $REPO_COUNT in README.md."
+          else
+            echo "Warning: Could not fetch repository count from GitHub API."
+          fi
+
+      - name: 06. Research Registry Commit & Push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add docs/ecosystem_monograph.md
-          # Formalizing the commit with a rigorous research-tier message
-          # Including the unique timestamp to ensure each tile on the graph is unique and documented
-          git commit -m "docs: Formal AI Ecosystem Monograph Update - Devanik21 [Registry Audit: $(date +%s)]"
-          git push origin main
+          git add README.md
 
-      - name: 06. Final Integrity Confirmation
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            # Formalizing the commit with a rigorous research-tier message
+            # Including the unique timestamp to ensure each tile on the graph is unique and documented
+            git commit -m "docs: Formal AI Ecosystem Monograph & README Update - Devanik21 [Registry Audit: $(date +%s)]"
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: 07. Final Integrity Confirmation
         run: |
           echo "AI Research Ecosystem Registry updated successfully."
           echo "Timestamp: $TIMESTAMP (UTC) | $IST_TIME (IST)"
