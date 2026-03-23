@@ -89,7 +89,7 @@ jobs:
           echo "#### Current Resonance Parameters" >> $LOG_FILE
           echo "- **Peak Accuracy:** 98.84% (Validated on OpenML 1471 EEG Eye State)" >> $LOG_FILE
           echo "- **Topological Superiority:** +8.23% vs. Standard Gradient Boosting on Hill Valley Datasets" >> $LOG_FILE
-          echo "- **Phase Jitter Robustness:** $\approx 100\%$ under extreme temporal jitter protocols." >> $LOG_FILE
+          echo "- **Phase Jitter Robustness:** \$\approx 100\%\$ under extreme temporal jitter protocols." >> $LOG_FILE
           echo "- **Generalization:** Outperforms XGBoost on 16 out of 20 diverse scientific datasets." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "We verify the **G.O.D. (General Omni Dimensional Optimizer)** for its dynamic sector selection, ensuring wave interference patterns govern the weighting council." >> $LOG_FILE
@@ -100,7 +100,7 @@ jobs:
           # ------------------------------------------------------------------
           echo "## III. Causal Emergence & Metacognitive Systems" >> $LOG_FILE
           echo "### 3.1 Divine Monad & Information Geometry" >> $LOG_FILE
-          echo "Auditing the **Recursive Causal Inference Engine**. We measure Integrated Information ($\Phi$) and Effective Information (EI) to quantify the emergence of macro-scale abstractions." >> $LOG_FILE
+          echo "Auditing the **Recursive Causal Inference Engine**. We measure Integrated Information (\$\Phi\$) and Effective Information (EI) to quantify the emergence of macro-scale abstractions." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "### 3.2 BSHDER: Bionic Self-Healing Invariants" >> $LOG_FILE
           echo "The **BSHDER** architecture utilizes a dual-state system of fragile present weights and protected past DNA. It is audited for resilience against noise and catastrophic forgetting." >> $LOG_FILE
@@ -117,11 +117,11 @@ jobs:
           # ------------------------------------------------------------------
           echo "## IV. Neural Quantum State Solver (The Schrödinger Dream)" >> $LOG_FILE
           echo "### 4.1 Variational Monte Carlo w/ SSM-Backflow" >> $LOG_FILE
-          echo "We investigate the exponential memory decay inherent to SSM recurrence relations as a proxy for electron correlation $\propto e^{-\alpha r_{ij}}$." >> $LOG_FILE
+          echo "We investigate the exponential memory decay inherent to SSM recurrence relations as a proxy for electron correlation \$\propto e^{-\alpha r_{ij}}\$." >> $LOG_FILE
           echo "" >> $LOG_FILE
           echo "#### Quantum Fisher Information Matrix (S-Matrix)" >> $LOG_FILE
-          echo "Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the $S$-matrix formation remains non-singular:" >> $LOG_FILE
-          echo "$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$" >> $LOG_FILE
+          echo "Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the \$S\$-matrix formation remains non-singular:" >> $LOG_FILE
+          echo "\$\$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle \$\$" >> $LOG_FILE
           echo "Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon." >> $LOG_FILE
           echo "" >> $LOG_FILE
 
