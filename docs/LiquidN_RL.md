@@ -342,3 +342,4 @@ Potential extensions include:
 By allowing temporal credit assignment to evolve with trajectory dynamics, the estimator provides a flexible mechanism for **adaptive bias–variance control**.
 
 This framework opens new directions for **adaptive reinforcement learning algorithms and estimator design**.
+<!-- Jules-Patrol: A very thorough mathematical derivation. Future iterations could add empirical benchmark graphs against standard GAE to visually support the claims of reduced gradient variance. -->
