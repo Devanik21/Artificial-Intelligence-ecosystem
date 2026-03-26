@@ -25,7 +25,7 @@ Liquid-N generalizes both **n-step returns** and **GAE** as special cases. We de
 Reinforcement learning algorithms rely on estimating the **advantage function**.
 
 $$
-\mathbf{A^{\pi}(s_t,a_t) = Q^{\pi}(s_t,a_t) - V^{\pi}(s_t)}
+A^{\pi}(s_t,a_t) = Q^{\pi}(s_t,a_t) - V^{\pi}(s_t)
 $$
 
 This quantity determines the direction of **policy gradient updates**.
@@ -60,13 +60,13 @@ This motivates a **dynamic horizon estimator**.
 The n-step return estimator is defined as
 
 $$
-\mathbf{R_t^{(n)} = \sum_{k=0}^{n-1} \gamma^k r_{t+k} + \gamma^n V(s_{t+n})}
+R_t^{(n)} = \sum_{k=0}^{n-1} \gamma^k r_{t+k} + \gamma^n V(s_{t+n})
 $$
 
 The corresponding advantage estimate is
 
 $$
-\mathbf{A_t^{(n)} = R_t^{(n)} - V(s_t)}
+A_t^{(n)} = R_t^{(n)} - V(s_t)
 $$
 
 Properties:
@@ -81,13 +81,13 @@ Properties:
 Define the **temporal difference residual**:
 
 $$
-\mathbf{\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)}
+\delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)
 $$
 
 GAE computes the advantage estimate:
 
 $$
-\mathbf{A_t^{GAE(\lambda)} = \sum_{l=0}^{\infty} (\gamma \lambda)^l \delta_{t+l}}
+A_t^{GAE(\lambda)} = \sum_{l=0}^{\infty} (\gamma \lambda)^l \delta_{t+l}
 $$
 
 Interpretation:
@@ -105,7 +105,7 @@ Existing estimators assume **stationary temporal weighting kernels**.
 For GAE, the weight applied to a TD residual at lag $l$ is
 
 $$
-\mathbf{w(l) = (\gamma \lambda)^l}
+w(l) = (\gamma \lambda)^l
 $$
 
 This structure cannot adapt to changes in trajectory statistics such as:
@@ -117,7 +117,7 @@ This structure cannot adapt to changes in trajectory statistics such as:
 An ideal estimator would instead allow
 
 $$
-\mathbf{w_t(l) = f(trajectory\ dynamics)}
+w_t(l) = f(\text{trajectory dynamics})
 $$
 
 where the weighting kernel evolves during learning.
@@ -129,13 +129,13 @@ where the weighting kernel evolves during learning.
 We introduce a **time-dependent horizon modulation parameter**:
 
 $$
-\mathbf{\beta_t \in [0,1]}
+\beta_t \in [0,1]
 $$
 
 The **Liquid-N advantage estimator** is defined as
 
 $$
-\mathbf{A_t^{Liquid} = \sum_{l=0}^{\infty} \left( \prod_{i=0}^{l-1} \gamma \beta_{t+i} \right) \delta_{t+l}}
+A_t^{Liquid} = \sum_{l=0}^{\infty} \left( \prod_{i=0}^{l-1} \gamma \beta_{t+i} \right) \delta_{t+l}
 $$
 
 This replaces the constant $\lambda$ used in GAE with a **time-varying parameter**.
@@ -185,7 +185,7 @@ Thus **Liquid-N forms a strict generalization** of both methods.
 The horizon parameter evolves through a **leaky integration rule**:
 
 $$
-\mathbf{\beta_{t+1} = (1-\alpha)\beta_t + \alpha f(\xi_t)}
+\beta_{t+1} = (1-\alpha)\beta_t + \alpha f(\xi_t)
 $$
 
 where
@@ -271,7 +271,7 @@ for timestep t:
 Define the **expected effective horizon**:
 
 $$
-\mathbf{H_t = \sum_{l=0}^{\infty} \prod_{i=0}^{l-1} \beta_{t+i}}
+H_t = \sum_{l=0}^{\infty} \prod_{i=0}^{l-1} \beta_{t+i}
 $$
 
 High $\beta$ values extend the horizon while low values shorten it.
@@ -308,7 +308,7 @@ Thus the estimator **dynamically adapts the bias–variance trade-off**.
 Primary comparison:
 
 $$
-\mathbf{Policy\ Loss\ vs\ Training\ Epochs}
+\text{Policy Loss vs Training Epochs}
 $$
 
 across estimators.
