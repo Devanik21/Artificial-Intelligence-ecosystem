@@ -65,7 +65,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -166,7 +166,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -267,7 +267,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -368,7 +368,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -469,7 +469,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -570,7 +570,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -671,7 +671,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -772,7 +772,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -873,7 +873,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -974,7 +974,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1075,7 +1075,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1176,7 +1176,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1277,7 +1277,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1378,7 +1378,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-$$S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle$$
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1582,7 +1582,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2240 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2240
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1683,7 +1683,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2284 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2284
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1784,7 +1784,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2343 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2343
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1885,7 +1885,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2470 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2470
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -1986,7 +1986,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2230 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2230
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2087,7 +2087,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2312 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2312
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2188,7 +2188,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2245 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2245
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2289,7 +2289,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2300 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2300
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2390,7 +2390,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2322 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2322
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
@@ -2491,7 +2491,7 @@ We investigate the exponential memory decay inherent to SSM recurrence relations
 
 #### Quantum Fisher Information Matrix (S-Matrix)
 Stochastic Reconfiguration (SR) optimization is verified via the Fubini-Study metric. We ensure the ehBmatrix formation remains non-singular:
-2334 S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle 2334
+$$ S_{ij} = \langle O_i O_j \rangle - \langle O_i \rangle \langle O_j \rangle $$
 Targeting sub-mHa chemical accuracy across atomic benchmarks from Hydrogen to Neon.
 
 ## V. AION: Information-Theoretic Longevity
