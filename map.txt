@@ -308,3 +308,5 @@ After Level 10	7.5/10	Chemical accuracy on real atoms/molecules
 After Level 12	8.5/10	SSM-backflow + flow-accelerated VMC (2 novel contributions)
 After Level 15	9.0/10	+ TD-VMC + Berry phase (4 novel contributions)
 After Level 20	10/10	+ entanglement entropy + conservation discovery (6 novel contributions, multiple papers)
+
+<!-- Jules-Patrol: Consider breaking down the 20-level roadmap into distinct, tracked GitHub issues or a project board for better visibility into ongoing progress and to facilitate collaborative contributions to the AGI framework. -->
