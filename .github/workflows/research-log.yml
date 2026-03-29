@@ -26,6 +26,8 @@ jobs:
           git config user.email "devanik2005@gmail.com"
 
       - name: 03. High-Fidelity Ecosystem Monograph Generation
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Creating the directory structure for high-fidelity archival
           mkdir -p docs
@@ -36,7 +38,7 @@ jobs:
           # ------------------------------------------------------------------
           # SECTION I: HEADER & METADATA
           # ------------------------------------------------------------------
-          REPO_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
+          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
 
           echo "---" >> $LOG_FILE
           echo "title: DΞVΛΠIK's AI Research Ecosystem - Daily Monograph" >> $LOG_FILE
@@ -180,9 +182,11 @@ jobs:
           fi
 
       - name: 05. README.md Dynamic Repository Count Automation
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Updating dynamically changing repository counts in README.md..."
-          REPO_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
+          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
 
           if [ -n "$REPO_COUNT" ]; then
             sed -i -E "s/Total_Repositories-[0-9]+-/Total_Repositories-${REPO_COUNT}-/g" README.md
