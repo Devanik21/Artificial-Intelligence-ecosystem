@@ -343,3 +343,4 @@ By allowing temporal credit assignment to evolve with trajectory dynamics, the e
 
 This framework opens new directions for **adaptive reinforcement learning algorithms and estimator design**.
 <!-- Jules-Patrol: A very thorough mathematical derivation. Future iterations could add empirical benchmark graphs against standard GAE to visually support the claims of reduced gradient variance. -->
+<!-- Jules-Patrol: Clear explanation of the Liquid-N Advantage Estimation! Adding some practical code snippets for typical implementations could be a nice enhancement in the future. -->
