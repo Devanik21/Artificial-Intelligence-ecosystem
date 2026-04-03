@@ -38,7 +38,12 @@ jobs:
           # ------------------------------------------------------------------
           # SECTION I: HEADER & METADATA
           # ------------------------------------------------------------------
-          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
+          # Jules-Patrol: Updated repository count fetching to use `jq` for robust parsing of the GitHub API response.
+          # Combined with regex validation (`=~ ^[0-9]+$`), this mitigates potential injection vulnerabilities.
+          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | jq -r '.public_repos')
+          if [[ ! "$REPO_COUNT" =~ ^[0-9]+$ ]]; then
+            REPO_COUNT="Unknown"
+          fi
 
           echo "---" >> $LOG_FILE
           echo "title: DΞVΛΠIK's AI Research Ecosystem - Daily Monograph" >> $LOG_FILE
@@ -186,15 +191,15 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Updating dynamically changing repository counts in README.md..."
-          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | grep '"public_repos":' | awk -F: '{print $2}' | tr -d ' ,"')
+          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | jq -r '.public_repos')
 
-          if [ -n "$REPO_COUNT" ]; then
+          if [[ "$REPO_COUNT" =~ ^[0-9]+$ ]]; then
             sed -i -E "s/Total_Repositories-[0-9]+-/Total_Repositories-${REPO_COUNT}-/g" README.md
             sed -i -E "s/📈 \*\*[0-9]+ Active Repositories\*\*/📈 \*\*${REPO_COUNT} Active Repositories\*\*/g" README.md
             sed -i -E "s/- [0-9]+ repositories demonstrating breadth/- ${REPO_COUNT} repositories demonstrating breadth/g" README.md
             echo "Dynamic repository count updated to $REPO_COUNT in README.md."
           else
-            echo "Warning: Could not fetch repository count from GitHub API."
+            echo "Warning: Could not fetch a valid repository count from GitHub API."
           fi
 
       - name: 06. Research Registry Commit & Push
