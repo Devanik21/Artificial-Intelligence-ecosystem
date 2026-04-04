@@ -45,7 +45,7 @@ jobs:
             REPO_COUNT="Unknown"
           fi
 
-          echo "---" >> $LOG_FILE
+          echo "---" > $LOG_FILE
           echo "title: DΞVΛΠIK's AI Research Ecosystem - Daily Monograph" >> $LOG_FILE
           echo "author: Devanik21 (Lead AGI & Longevity Researcher)" >> $LOG_FILE
           echo "affiliation: NIT Agartala | Samsung Convergence Software Fellow (IISc)" >> $LOG_FILE
