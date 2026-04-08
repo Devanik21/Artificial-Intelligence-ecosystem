@@ -225,3 +225,6 @@ jobs:
           echo "Timestamp: $TIMESTAMP (UTC) | $IST_TIME (IST)"
           echo "Identity: Devanik21 | Lead AGI & Longevity Researcher"
           echo "Target File: .github/workflows/research-log.yml"
+
+      # Jules-Patrol: A good future enhancement could be to upload the generated `ecosystem_monograph.md`
+      # as a workflow artifact so it can be verified manually if `git push` fails.
