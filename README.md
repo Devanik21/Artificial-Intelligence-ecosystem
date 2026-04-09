@@ -622,6 +622,8 @@ This portfolio represents a rigorous engineering effort in **distributed state e
 
 ### 🧠 **Advanced Cognitive Architectures Implemented**
 
+<!-- Jules-Patrol: A potential future improvement could be linking these architectures directly to their corresponding papers or repositories for easier navigation. -->
+
 1. **Divine Monad** - Causal emergence investigation with integrated information metrics
 2. **Recursive Hebbian Organism** - Neuromorphic continual learning (21 developmental stages)
 3. **Thermodynamic Mind** - Free energy principle implementation
