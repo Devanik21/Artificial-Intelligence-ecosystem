@@ -225,3 +225,5 @@ jobs:
           echo "Timestamp: $TIMESTAMP (UTC) | $IST_TIME (IST)"
           echo "Identity: Devanik21 | Lead AGI & Longevity Researcher"
           echo "Target File: .github/workflows/research-log.yml"
+
+# Jules-Patrol: The deterministic audit steps in this workflow are well-structured. Future improvement could involve adding a step to validate Markdown linting before committing the generated monograph.
