@@ -40,7 +40,8 @@ jobs:
           # ------------------------------------------------------------------
           # Jules-Patrol: Updated repository count fetching to use `jq` for robust parsing of the GitHub API response.
           # Combined with regex validation (`=~ ^[0-9]+$`), this mitigates potential injection vulnerabilities.
-          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | jq -r '.public_repos')
+          # Jules-Patrol: Piped the Authorization header via stdin using printf to prevent token exposure in process listings, and updated to Bearer format.
+          REPO_COUNT=$(printf "Authorization: Bearer %s" "$TOKEN" | curl -s -H @- https://api.github.com/users/Devanik21 | jq -r '.public_repos')
           if [[ ! "$REPO_COUNT" =~ ^[0-9]+$ ]]; then
             REPO_COUNT="Unknown"
           fi
@@ -191,7 +192,8 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Updating dynamically changing repository counts in README.md..."
-          REPO_COUNT=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/users/Devanik21 | jq -r '.public_repos')
+          # Jules-Patrol: Piped the Authorization header via stdin using printf to prevent token exposure in process listings, and updated to Bearer format.
+          REPO_COUNT=$(printf "Authorization: Bearer %s" "$TOKEN" | curl -s -H @- https://api.github.com/users/Devanik21 | jq -r '.public_repos')
 
           if [[ "$REPO_COUNT" =~ ^[0-9]+$ ]]; then
             sed -i -E "s/Total_Repositories-[0-9]+-/Total_Repositories-${REPO_COUNT}-/g" README.md
