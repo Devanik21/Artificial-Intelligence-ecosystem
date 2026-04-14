@@ -599,7 +599,7 @@ This portfolio represents a rigorous engineering effort in **distributed state e
 
 ### 📊 **Engineering Impact**
 
-📈 **194 Active Repositories** *(Public)* <!-- TODO: Consider automating the update of this repository count to keep it dynamically current. -->
+📈 **193 Active Repositories** *(Public)* <!-- TODO: Consider automating the update of this repository count to keep it dynamically current. -->
    - Comprehensive exploration across 9 major AI domains
    - 50+ production-ready applications deployed
    - 20+ experimental architecture prototypes and research frameworks
@@ -775,7 +775,7 @@ Phase 4: Post-Biological Architectures (2029+)
 - Interdisciplinary research at the intersection of physics, neuroscience, and ML
 
 **What I Bring:**
-- 194 repositories demonstrating breadth and depth across AI <!-- TODO: Consider automating the update of this repository count to keep it dynamically current. -->
+- 193 repositories demonstrating breadth and depth across AI <!-- TODO: Consider automating the update of this repository count to keep it dynamically current. -->
 - Proven track record of experimental architecture prototypes (Divine Monad, Recursive Hebbian Organism, AION)
 - National-level recognition (ISRO Hackathon Winner, Samsung Fellowship)
 - Strong mathematical foundations and implementation skills
