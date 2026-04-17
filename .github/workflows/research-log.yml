@@ -12,6 +12,7 @@ jobs:
     permissions:
       contents: write
 
+    # Jules-Patrol: Consider modularizing the large run script into separate bash files for better maintainability.
     steps:
       - name: 01. Ecosystem Synchronization
         uses: actions/checkout@v4
