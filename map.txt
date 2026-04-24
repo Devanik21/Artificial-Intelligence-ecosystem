@@ -214,7 +214,7 @@ Compute excited states $E_0 < E_1 < E_2 < ...$ simultaneously.
 solver.py
 : For state $k$, minimize energy with hard orthogonality constraints:
 
-$$\mathcal{L}_k = \langle E_L \rangle_k + \beta \text{Var}(E_L)k + \sum{j<k}\lambda\left|\langle \psi_k | \psi_j \rangle\right|^2$$
+$$\mathcal{L}_k = \langle E_L \rangle_k + \beta \text{Var}(E_L)k + \sum_{j<k}\lambda\left|\langle \psi_k | \psi_j \rangle\right|^2$$
 
 The variance term $\text{Var}(E_L)$ is zero for exact eigenstates — it drives the optimizer toward true eigenfunctions, not just low-energy approximations. This is the variance minimization approach (Umrigar, 2007).
 
@@ -307,3 +307,5 @@ After Level 10	7.5/10	Chemical accuracy on real atoms/molecules
 After Level 12	8.5/10	SSM-backflow + flow-accelerated VMC (2 novel contributions)
 After Level 15	9.0/10	+ TD-VMC + Berry phase (4 novel contributions)
 After Level 20	10/10	+ entanglement entropy + conservation discovery (6 novel contributions, multiple papers)
+
+<!-- Jules-Patrol: The progression of phases is highly systematic. Setting up a dedicated issue tracker or Kanban board mapped precisely to these 20 levels could further streamline this ambitious undertaking. -->
