@@ -10,8 +10,6 @@ This module implements the fundamental physical components of the Neural Quantum
 - Autonomous Conservation Law Verifier
 """
 
-import torch
-
 # TODO: Implement 3D Multi-Electron Coordinate System (Level 1)
 # TODO: Implement Metropolis-Hastings VMC Sampling (Level 2)
 # TODO: Implement Exact Laplacian via Autograd + Hutchinson Trace Estimator (Level 3)

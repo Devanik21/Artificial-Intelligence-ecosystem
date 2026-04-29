@@ -9,9 +9,6 @@ This module implements the neural wavefunction architectures:
 - Spinor Wavefunctions for Relativistic Spin-Orbit Coupling
 """
 
-import torch
-import torch.nn as nn
-
 # TODO: Implement Log-Domain Wavefunction Architecture (Level 4)
 # TODO: Implement Antisymmetric Wavefunction — Generalized Slater Determinant (Level 5)
 # TODO: Implement Kato Cusp Conditions Jastrow Factor (Level 6)
