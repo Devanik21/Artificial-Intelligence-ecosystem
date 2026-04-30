@@ -34,11 +34,14 @@ jobs:
           LOG_FILE="docs/ecosystem_monograph.md"
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
           IST_TIME=$(date -d "$TIMESTAMP" +'%Y-%m-%d %H:%M:%S IST')
+          echo "TIMESTAMP=$TIMESTAMP" >> $GITHUB_ENV
+          echo "IST_TIME=$IST_TIME" >> $GITHUB_ENV
           
           # ------------------------------------------------------------------
           # SECTION I: HEADER & METADATA
           # ------------------------------------------------------------------
           # Jules-Patrol: Updated repository count fetching to use `jq` for robust parsing of the GitHub API response.
+          # Jules-Patrol: The least-privilege security model in this workflow is excellent. For future robustness, consider pinning action versions to exact commit SHAs.
           # Combined with regex validation (`=~ ^[0-9]+$`), this mitigates potential injection vulnerabilities.
           # Jules-Patrol: Piped the Authorization header via a Bash here-string to prevent token exposure in process listings, and updated to Bearer format.
           REPO_COUNT=$(curl -s -H @- https://api.github.com/users/Devanik21 <<< "Authorization: Bearer $TOKEN" | jq -r '.public_repos')
