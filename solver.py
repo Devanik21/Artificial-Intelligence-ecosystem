@@ -9,8 +9,6 @@ This module implements the training and evolution algorithms:
 - Autonomous Conservation Law Discovery Engine
 """
 
-import torch
-
 # TODO: Implement Stochastic Reconfiguration (Level 8)
 # TODO: Implement Flow-Accelerated VMC (Level 12)
 # TODO: Implement Excited State Orthogonality Constraints (Level 13)
