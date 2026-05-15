@@ -9,6 +9,7 @@ jobs:
   ecosystem-audit-log:
     name: Formal Cognitive Architecture Audit & Registry
     runs-on: ubuntu-latest
+    # Jules-Patrol: Consider isolating the 'contents: write' permission to a dependent deployment job restricted to the main branch to strictly adhere to the least-privilege security model.
     permissions:
       contents: write
 
