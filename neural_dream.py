@@ -13,3 +13,4 @@ This module implements the neural wavefunction architectures:
 # TODO: Implement Antisymmetric Wavefunction — Generalized Slater Determinant (Level 5)
 # TODO: Implement Kato Cusp Conditions Jastrow Factor (Level 6)
 # TODO: Implement Deep Backflow Transform / SSM-Backflow (Level 7 & 11)
+# Jules-Patrol: The neural architecture plan looks solid. The Selective State Space Model for backflow is a profound idea.
