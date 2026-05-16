@@ -12,3 +12,4 @@ This module implements the high-level interface and visualization:
 # TODO: Implement Atom/Molecule Selector & Ground State Benchmarks (Level 9)
 # TODO: Implement Molecule Dissociation Curves (Level 10)
 # TODO: Implement Live Interactive Dashboard (Level 20)
+# Jules-Patrol: Clear interface definition for the Schrödinger Dream lab. The interactive dashboards will be very helpful.

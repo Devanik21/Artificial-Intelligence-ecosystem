@@ -13,3 +13,4 @@ This module implements the training and evolution algorithms:
 # TODO: Implement Flow-Accelerated VMC (Level 12)
 # TODO: Implement Excited State Orthogonality Constraints (Level 13)
 # TODO: Implement Time-Dependent VMC (Level 15)
+# Jules-Patrol: Great placeholder setup for the optimization engine. The use of TD-VMC for dynamics is promising.
