@@ -376,7 +376,7 @@ This portfolio represents a rigorous engineering effort in **distributed state e
 | [Black Hole](https://github.com/Devanik21/Black-hole) | General relativity simulations | Ray tracing geodesics |
 | [Bi-LSTM Light Curve Reconstruction](https://github.com/Devanik21/Bi-LSTM-light-curve-reconstruction-sample) | Stellar variability modeling | Recurrent architectures |
 | [AI Cyclone Prediction](https://github.com/Devanik21/AI-cyclone-prediction) | Hurricane trajectory forecasting | Spatio-temporal CNNs |
-| [Galaxy Dataset](https://github.com/Devanik21/Galaxy-datsset) <!-- TODO: Consider renaming repository to Galaxy-dataset to fix typo --> | Morphology classification | Transfer learning |
+| [Galaxy Dataset](https://github.com/Devanik21/Galaxy-datsset) <!-- TODO: Consider renaming repository to Galaxy-dataset to fix typo --> <!-- Jules-Patrol: A minor typo in the repository name ('Galaxy-datsset') was noted, but kept as-is to prevent breaking existing links until the actual repository is renamed. --> | Morphology classification | Transfer learning |
 | [evEntHorizoN_Z](https://github.com/Devanik21/evEntHorizoN_Z) | Event horizon visualization | Relativistic rendering |
 | [QuasarQ](https://github.com/Devanik21/QuasarQ) | Quasar spectrum analysis | Dimensionality reduction |
 | [Life Beyond](https://github.com/Devanik21/Life-Beyond) | Exoplanet habitability scoring | Random forest classifier |
